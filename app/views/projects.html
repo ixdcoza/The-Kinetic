@@ -1,0 +1,9 @@
+
+<ul>
+  <li ui-sref-active="active" ng-repeat="project in projects">
+    <a ui-sref=".detail({ id: project.id })">{{project.name}}</a>
+  </li>
+</ul>
+
+<!-- <div ui-view="detail" ></div> -->
+<div ui-view="detail" style="background: grey;"></div>
