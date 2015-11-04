@@ -103,6 +103,10 @@
 
 			tlmenuitems = new TimelineMax({
 				paused: true
+			}),
+
+			tlmenucircle = new TimelineMax({
+				paused: true
 			});
 
 		function init() {
@@ -130,11 +134,19 @@
 			} );
 
 
-			tlmenuitems.staggerFrom(".menu-item", 0.5, {top:400, opacity: 0, delay:0.4, ease:Circ.easeOut}, 0.2);
+			tlmenuitems.staggerFrom(".menu-item", 0.3, {top:400, opacity: 0, delay:0.4, ease:Circ.easeOut}, 0.1);
 			tl.to('.menu-wrap', 0.6, {
 				left: 0,
-				ease: Circ.easeInOut
+				bottom: 0,
+				ease: Power1.easeInOut
 			});
+
+			tlmenucircle.to('.menu-circle', 0.6, {
+				left: -100,
+				ease: Circ.easeInOut
+			}, "-=0.9");
+
+
 
 			
 		}
@@ -143,12 +155,14 @@
 			if( isOpen ) {
 				classie.remove( bodyEl, 'show-menu' );
 				tl.reverse();
+				tlmenucircle.reverse();
 				console.log('menu closed');
 			}
 			else {
 				classie.add( bodyEl, 'show-menu' );
 				console.log('menu open');
 				tl.play();
+				tlmenucircle.play();
 				tlmenuitems.restart();
 			}
 			isOpen = !isOpen;

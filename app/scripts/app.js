@@ -29,7 +29,8 @@ angular
             'primarycontent': {
               templateUrl: 'views/home.html',
               controller: 'HomeCtrl',
-              controllerAs: 'home'
+              controllerAs: 'home',
+              data: {position: [1,1]}
             }
           }
         })
@@ -39,7 +40,8 @@ angular
             'primarycontent@': {
               templateUrl: 'views/about.html',
               controller: 'AboutCtrl',
-              controllerAs: 'about'
+              controllerAs: 'about',
+              data: {position: [1,0]}
             }
           }
         })
@@ -57,7 +59,8 @@ angular
           url:'culture',
           views: {
             'primarycontent@': {
-              templateUrl: 'views/culture.html'
+              templateUrl: 'views/culture.html',
+              data: {position: [0,2]}
             }
           }
         })
@@ -66,7 +69,8 @@ angular
           url:'contact',
           views: {
             'primarycontent@': {
-              templateUrl: 'views/contact.html'
+              templateUrl: 'views/contact.html',
+              data: {position: [2,1]}
             }
           }
         })
@@ -92,7 +96,6 @@ angular
                 });
 
       }]);
-
 
 
 
