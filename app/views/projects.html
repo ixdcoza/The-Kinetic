@@ -1,9 +1,17 @@
+<div class="content-area portfolio-container">
+		<div ui-view="detail" class="project-details-container" id="project"></div>
+		<div class="header">
+			<h1><span>Our Work</span></h1>
+		</div>
+		<div class="row project-grid">
+			<div class="" ng-repeat="project in projects">
 
-<ul>
-  <li ui-sref-active="active" ng-repeat="project in projects">
-    <a ui-sref=".detail({ id: project.id })">{{project.name}}</a>
-  </li>
-</ul>
-
-<!-- <div ui-view="detail" ></div> -->
-<div ui-view="detail" style="background: grey;"></div>
+				<a ui-sref=".detail({ id: project.id })" ui-sref-active="active">
+					<div class="col-md-3 single-thumb" back-img="{{project.thumb}}" ng-click="projectTransition()">
+					
+					</div>
+				</a>
+			</div>
+		</div> <!-- / row -->
+	
+</div>

@@ -10,9 +10,10 @@
 	 * Controller of the kinetixApp
 	 */
 	angular.module('kinetixApp')
-	  	.controller('ProjectsDetailCtrl', ['$scope', '$stateParams', 'ProjectService', function($scope, $stateParams, ProjectService){
+	  	.controller('ProjectsDetailCtrl', ['$scope', '$stateParams', '$timeout', 'ProjectService', function($scope, $stateParams, $timeout, ProjectService){
           
-          $scope.selectedProject = ProjectService.find($stateParams.id);
+
+          	$scope.selectedProject = ProjectService.find($stateParams.id);
 
         }]);
 
