@@ -96,7 +96,7 @@ angular
                   resolve: {
                     delay: function($q, $timeout) {
                       var delay = $q.defer();
-                      $timeout(delay.resolve, 1500);
+                      $timeout(delay.resolve, 1200);
                       return delay.promise;
                     }
                   }

@@ -395,10 +395,13 @@ video {
 
 .show-menu {
   .content-area {
-      opacity: 0.5;
+      opacity: 0.6;
   }  
 }
 
+.transitionClass {
+  opacity: 0.8;
+}
 
 // content area
 .content-area {
@@ -450,6 +453,15 @@ video {
       text-align: center;
     }
   }
+}
+
+.vert-loader {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 10px;
+  background: #000;
 }
 
 .logo-container {
@@ -586,7 +598,7 @@ video {
 }
 
 .project-details-container {
-  background: grey;
+  // background: grey;
 }
 
 h1 {
@@ -629,15 +641,12 @@ p {
   }
 }
 
-.ui-view-container {
-  position: relative;
-}
 
 [ui-view].ng-enter, [ui-view].ng-leave {
-  -webkit-transition:all .5s ease-in-out;
-    -moz-transition:all .5s ease-in-out;
-    -o-transition:all .5s ease-in-out;
-    transition:all .5s ease-in-out;
+  -webkit-transition:all .3s ease-in-out;
+    -moz-transition:all .3s ease-in-out;
+    -o-transition:all .3s ease-in-out;
+    transition:all .3s ease-in-out;
 }
 
 [ui-view].ng-enter {

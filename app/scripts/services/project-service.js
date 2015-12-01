@@ -11,13 +11,32 @@
 	 */
 	angular.module('kinetixApp')
 	  .service('ProjectService', function(){
-          /* jshint ignore:start */
+         /* jshint ignore:start */
           var projects = [{
               id: 1,
               slug: 'project-1',
               name: 'Project 1',
               description: 'The story of mans creation and fall into exile.',
-              thumb: '../../images/img1.jpg'
+              thumb: '../../images/img1.jpg',
+              videos : [
+                {
+                  id : 1,
+                  title : 'My Mixtape 1',
+                  type : 'Show Package 1',
+                  thumb: '../../images/img1.jpg'
+                },
+                {
+                  id : 2,
+                  title : 'My Mixtape 2',
+                  type : 'Show Package 2',
+                  thumb: '../../images/img1.jpg'
+                },
+                {
+                  id : 3,
+                  title : 'My Mixtape 3',
+                  type : 'Show Package 3',
+                  thumb: '../../images/img1.jpg'
+                }]
           },
           {
               id: 2,

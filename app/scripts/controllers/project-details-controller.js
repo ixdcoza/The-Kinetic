@@ -15,6 +15,7 @@
 
           	$scope.selectedProject = ProjectService.find($stateParams.id);
 
+
         }]);
 
 })(); 

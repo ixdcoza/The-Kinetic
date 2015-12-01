@@ -141,10 +141,10 @@
 				ease: Power1.easeInOut
 			});
 
-			tlmenucircle.to('.menu-circle', 0.6, {
-				left: -100,
-				ease: Circ.easeInOut
-			}, "-=0.9");
+			// tlmenucircle.to('.menu-circle', 0.6, {
+			// 	left: -100,
+			// 	ease: Circ.easeInOut
+			// }, "-=0.9");
 
 
 

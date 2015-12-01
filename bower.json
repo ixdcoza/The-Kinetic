@@ -9,7 +9,9 @@
     "angular-route": "^1.3.0",
     "ui-router": "*",
     "underscore": "*",
-    "greensock": "*"
+    "greensock": "*",
+    "waypoints": "*",
+    "owl.carousel": "*"
   },
   "devDependencies": {
     "angular-mocks": "^1.3.0"

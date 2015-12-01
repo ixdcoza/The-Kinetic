@@ -5,6 +5,15 @@
 	  {{selectedProject.description}}
 	</p>
 
+	
+	   <data-owl-carousel class="owl-carousel" data-options="{navigation: true, pagination: false, items: 1}">
+	         <div owl-carousel-item="" ng-repeat="video in ::selectedProject.videos" class="item">
+	           <p>{{::video.type}}</p>
+	           <div style="width: 500px; height: 500px;" back-img="{{::video.thumb}}">
+	           </div>
+	         </div>
+	    </data-owl-carousel>
+
 
 	<p>&nbsp;</p>
 	<p>&nbsp;</p>
