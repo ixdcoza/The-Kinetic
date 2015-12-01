@@ -15,6 +15,10 @@
 
           	$scope.selectedProject = ProjectService.find($stateParams.id);
 
+        
+          	$scope.nextProject = $scope.selectedProject.id + 1;
+          	$scope.prevProject = $scope.selectedProject.id - 1;
+
 
         }]);
 
