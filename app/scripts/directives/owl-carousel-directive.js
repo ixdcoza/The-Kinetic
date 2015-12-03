@@ -20,6 +20,15 @@
               scope.initCarousel = function(element) {
                 // provide any default options you want
                   var defaultOptions = {
+                    navigation: true, 
+                    pagination: false, 
+                    items: 1,
+                    loop: true,
+                    // autoplay: true,
+                    // autoplayTimeout: 2000,
+                    // autoplayHoverPause: true,
+                     // slideSpeed : 1800
+
                   };
                   var customOptions = scope.$eval($(element).attr('data-options'));
                   // combine the two options objects
@@ -28,6 +37,17 @@
                   }
                   // init carousel
                   $(element).owlCarousel(defaultOptions);
+
+
+                  $('.arrow-right').click(function() {
+                    var owl = $(element);
+                    owl.trigger('next.owl.carousel');
+                  });
+
+                  $('.arrow-left').click(function() {
+                    var owl = $(element);
+                    owl.trigger('prev.owl.carousel');
+                  });
               };
           }
       };

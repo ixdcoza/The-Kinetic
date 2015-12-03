@@ -23,19 +23,19 @@
                   id : 1,
                   title : 'My Mixtape 1',
                   type : 'Show Package 1',
-                  thumb: '../../images/img1.jpg'
+                  cover: '../../images/video-cover.jpg'
                 },
                 {
                   id : 2,
                   title : 'My Mixtape 2',
                   type : 'Show Package 2',
-                  thumb: '../../images/img1.jpg'
+                  cover: '../../images/video-cover.jpg'
                 },
                 {
                   id : 3,
                   title : 'My Mixtape 3',
                   type : 'Show Package 3',
-                  thumb: '../../images/img1.jpg'
+                  cover: '../../images/video-cover.jpg'
                 }]
           },
           {

@@ -1,18 +1,35 @@
 <div class="project-inner">
+	<data-owl-carousel class="owl-carousel video-header" data-options="">
+      	<div owl-carousel-item="" ng-repeat="video in selectedProject.videos" class="item" back-img="{{video.cover}}">
+        	<div class="item-assets">
+	        	<h1>{{video.title}}</h1>
+	        	<p>{{video.type}}</p>
+	        	<div class="play-btn">
+	        		<img src="../images/play.png" alt="Play Video">
+	        	</div>
+        	</div>
+      	</div>
+	</data-owl-carousel>
 
-	sasd<h3>{{selectedProject.name}}</h3>
+	<!-- PREVIOUS VIDEO -->
+	<div class="arrow arrow-left">
+		<span class="glyphicon glyphicon-menu-left arrow-left-mini" aria-hidden="true"></span>
+	</div>
+	<!-- NEXT VIDEO -->
+	<div class="arrow arrow-right" owl-carousel-next>
+		<span class="glyphicon glyphicon-menu-right arrow-right-mini" aria-hidden="true"></span>
+	</div>
+<!-- 
+
+Project Details Page
+	<h3>{{selectedProject.name}}</h3>
+	<h3>{{selectedProject.id}}</h3>
 	<p>
 	  {{selectedProject.description}}
 	</p>
-
+ -->
 	
-	   <data-owl-carousel class="owl-carousel" data-options="{navigation: true, pagination: false, items: 1}">
-	         <div owl-carousel-item="" ng-repeat="video in ::selectedProject.videos" class="item">
-	           <p>{{::video.type}}</p>
-	           <div style="width: 500px; height: 500px;" back-img="{{::video.thumb}}">
-	           </div>
-	         </div>
-	    </data-owl-carousel>
+	   
 
 
 	<p>&nbsp;</p>
@@ -66,7 +83,7 @@
 	<p>&nbsp;</p>
 
 	<a ng-click="projectTransition()" href="#/projects/{{prevProject}}">Previous Project</a>
-	<a ng-click="projectTransition()" href="#/projects/{{nextProject}}">Next Project {{selectedProject.name}}</a>
+	<a ng-click="projectTransition()" href="#/projects/{{nextProject}}">Next Project</a>
 
 </div>
 
