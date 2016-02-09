@@ -14,7 +14,8 @@ angular
   .module('kinetixApp', [
     'ngAnimate',
     'ngResource',
-    'ui.router'
+    'ui.router',
+    'angularGrid'
   ])
   .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
       $urlRouterProvider.otherwise('/');

@@ -447,7 +447,8 @@ video {
   }
   &.portfolio-container {
     background: #fff;
-    overflow-y: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
     .header {
       padding: 8em 1em;
       text-align: center;
@@ -592,13 +593,62 @@ video {
   }
   .active {
     .single-thumb {
-      border: 9px solid white;
+      border: 9px solid #e3e3e3;
     }
   }
 }
 
 .project-details-container {
   // background: grey;
+}
+
+.project-copy {
+  margin-top: 600px;
+  margin-bottom: 80px;
+}
+
+.project-credits {
+  margin-top: 40px;
+}
+
+.owl-stage-outer {
+  height: 100%;
+}
+
+.animation-circle {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  margin-left: -50px;
+  transform-origin: center center;
+  overflow: visible!important;
+}
+
+.pagination {
+  width: 100%;
+  font-family: 'Centuma-Bold';
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #e3e3e3;
+  padding-bottom: 20px;
+  a {
+    color: #000;
+  }
+  &-top {
+    cursor: pointer;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.9em;
+  }
+  &-bottom {
+    font-size: 1.3em;
+  }
+  &-prev {
+    padding-right: 2em;
+  }
+  &-next {
+    padding-left: 2em; 
+  }
 }
 
 h1 {
@@ -691,6 +741,7 @@ p {
   left: 0;
   height: 500px;
   color: white;
+  background: black;
   .item {
     height: 500px;
     width: 100%!important;
@@ -727,6 +778,67 @@ p {
       }
     }
   }
+}
+
+.vid-stage {
+  position: absolute;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background: red;
+  z-index: 1010;
+}
+
+.dynamic-grid {
+  position: relative;
+  display: none;
+}
+.dynamic-grid.angular-grid {
+  display: block;
+}
+.grid {
+  position: absolute;
+  list-style: none;
+  background: #ffffff;;
+  box-sizing: border-box;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  overflow: hidden;
+}
+.grid.ng-leave {
+  -webkit-transition: all ease 400ms;
+  transition: all ease 400ms;
+}
+.grid.ng-leave.ng-leave-active {
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  opacity: 0;
+}
+.grid.ng-enter {
+  -webkit-transition: all ease 400ms;
+  transition: all ease 400ms;
+  -webkit-transition-delay: 500ms;
+  transition-delay: 500ms;
+  -webkit-transform: scale(0.5);
+   transform: scale(0.5);
+  opacity: 0;
+}
+.grid.ng-enter.ng-enter-active {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+.grid-img {
+  width: 100%;
+  vertical-align: middle;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+}
+.grid-img.img-loaded {
+  visibility: visible;
+  opacity: 1;
 }
 
 

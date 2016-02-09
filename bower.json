@@ -11,7 +11,9 @@
     "underscore": "*",
     "greensock": "*",
     "waypoints": "*",
-    "owl.carousel": "*"
+    "owl.carousel": "*",
+    "angulargrid": "*",
+    "Snap.svg": "*"
   },
   "devDependencies": {
     "angular-mocks": "^1.3.0"

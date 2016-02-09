@@ -18,24 +18,48 @@
               name: 'Project 1',
               description: 'The story of mans creation and fall into exile.',
               thumb: '../../images/img1.jpg',
+              images: [
+                'https://mir-s3-cdn-cf.behance.net/project_modules/1400/4cf65a25334715.563440162b630.jpg',
+                '../../images/video-cover.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/fe45e531793539.568d15ffd0925.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a7c97731793539.56608292a75fc.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/1400/2ae33c25334715.563440491366c.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/1400/ae9eb425334715.563449bbb63fc.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/1400/c9fd9325334715.563440152de97.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/1400/174d4425334715.56343fdf16754.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/disp/20fba27378785.560aa7aa3dff8.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/disp/7b4fc47378785.560aa7c546977.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/disp/5e73e27378785.560aa7d48a165.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/disp/762e6a7378785.560aa7bd47a49.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/disp/1298007378785.560aa7c5bd068.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/disp/6431057378785.560aa7b8854e2.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/disp/b18cfe7378785.560aa7bdf121e.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/disp/2c1e7f7378785.560aa7c98895e.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/disp/4247517378785.560aa7be40c4b.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/disp/cdb3f97378785.560aa7c31f194.jpg'
+
+              ],
               videos : [
                 {
                   id : 1,
                   title : 'My Mixtape 1',
                   type : 'Show Package 1',
-                  cover: '../../images/video-cover.jpg'
+                  cover: '../../images/video-cover.jpg',
+                  playTrigger: 'circle1'
                 },
                 {
                   id : 2,
                   title : 'My Mixtape 2',
                   type : 'Show Package 2',
-                  cover: '../../images/video-cover.jpg'
+                  cover: '../../images/video-cover.jpg',
+                  playTrigger: 'circle2'
                 },
                 {
                   id : 3,
                   title : 'My Mixtape 3',
                   type : 'Show Package 3',
-                  cover: '../../images/video-cover.jpg'
+                  cover: '../../images/video-cover.jpg',
+                  playTrigger: 'circle3'
                 }]
           },
           {
@@ -43,7 +67,43 @@
               slug: 'project-2',
               name: 'Project 2',
               description: 'A good woman remains faithful to her family and finds love in a surprising place.',
-              thumb: '../../images/img2.jpg'
+              thumb: '../../images/img2.jpg',
+              images: [
+                'https://mir-s3-cdn-cf.behance.net/project_modules/disp/2c1e7f7378785.560aa7c98895e.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/disp/4247517378785.560aa7be40c4b.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/disp/b18cfe7378785.560aa7bdf121e.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/disp/cdb3f97378785.560aa7c31f194.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/1400/4cf65a25334715.563440162b630.jpg',
+                '../../images/video-cover.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/fe45e531793539.568d15ffd0925.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a7c97731793539.56608292a75fc.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/1400/2ae33c25334715.563440491366c.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/1400/ae9eb425334715.563449bbb63fc.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/1400/174d4425334715.56343fdf16754.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/disp/20fba27378785.560aa7aa3dff8.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/1400/c9fd9325334715.563440152de97.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/disp/7b4fc47378785.560aa7c546977.jpg',
+                
+                'https://mir-s3-cdn-cf.behance.net/project_modules/disp/762e6a7378785.560aa7bd47a49.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/disp/1298007378785.560aa7c5bd068.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/disp/6431057378785.560aa7b8854e2.jpg',
+                'https://mir-s3-cdn-cf.behance.net/project_modules/disp/5e73e27378785.560aa7d48a165.jpg'
+                
+
+              ],
+              videos : [
+                {
+                  id : 1,
+                  title : 'My Mixtape 1',
+                  type : 'Show Package 1',
+                  cover: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/4cf65a25334715.563440162b630.jpg'
+                },
+                {
+                  id : 2,
+                  title : 'My Mixtape 3',
+                  type : 'Show Package 3',
+                  cover: 'http://orig13.deviantart.net/aeb7/f/2013/028/7/f/dark_side_lightsaber_hilt___concept_design_by_blastedhitmowaka-d5t2ege.jpg'
+                }]
           },
           {
               id: 3,
