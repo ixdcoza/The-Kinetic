@@ -43,6 +43,7 @@
                  		console.log($scope.selectedProject.id);
 
                  		var s = Snap(".circle1");
+                 		var t = Snap(".triangle1");
                  		// var s2 = Snap(".circle2");
                  		// var s3 = Snap(".circle3");
 
@@ -50,11 +51,19 @@
              		    // var playCircle2 = s2.circle(50, 50, 48);
              		    // var playCircle3 = s3.circle(50, 50, 48);
 
+             		    var playTriangle1 = t.polygon(0,0,30,20,0,40);
+
+
+             		    playTriangle1.attr({ 
+             		    	fill: "#fff",
+							id: 'playbutton',
+             		    });
+
                  		playCircle1.attr({
                  	    	// fill: "black",
                  	    	// stroke: "white",
                  	    	// strokeWidth: 3,
-                 	    	opacity: 0.7,
+                 	    	fillOpacity: 0.7,
                  	    	fill: '#000',
 							stroke: '#fff',
 							strokeOpacity: 1,
@@ -113,6 +122,12 @@
 	                 		}  ,
 	                 		ease: Expo.easeIn
                  		});	
+
+                 		tlExpand1.to(playTriangle1.node, 0.2, {
+                 			css: {
+                 				autoAlpha: 0
+                 			},
+                 		},'-=0.7');	
 
                  		tlVidHeader.to('.video-header', 0.6, {
                  			css: {

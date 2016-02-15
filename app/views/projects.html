@@ -6,11 +6,11 @@
 		<div class="header">
 			<h1><span>Our Work</span></h1>
 		</div>
-		<ul class="dynamic-grid" angular-grid="pics" grid-width="250" gutter-size="1" angular-grid-id="gallery" refresh-on-img-load="true" >
+		<ul class="dynamic-grid" angular-grid="pics" grid-width="250" gutter-size="0" angular-grid-id="gallery" refresh-on-img-load="true" >
 		     <li ng-repeat="project in projects" class="grid">
 		     	<a ui-sref=".detail({ id: project.id })" ui-sref-active="active">
 		     	<div class="img_overlay" ng-click="projectTransition()" >
-		     	<h3>{{project.name}}</h3>
+		     		<h3>{{project.name}}</h3>
 		     	</div>
 		         <img data-ng-src="{{ project.thumb }}" class="grid-img" data-actual-width = "{{pic.actualWidth}}"  data-actual-height="{{pic.actualHeight}}"/>
 		        </a>

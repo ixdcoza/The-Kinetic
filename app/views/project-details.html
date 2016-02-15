@@ -5,7 +5,7 @@
 	<div class="video-container" ng-repeat="video in selectedProject.videos">
 		{{video.title}}
 
-		<vimeo-video player-id="video1" video-id="119763015" player-width="960" player-height="540"></vimeo-video>
+		<!-- <vimeo-video player-id="video1" video-id="119763015" player-width="960" player-height="540"></vimeo-video> -->
 	</div>
 </div>
 
@@ -16,6 +16,7 @@
 	        	<h1>{{video.title}}</h1>
 	        	<p>{{video.type}}</p>
 	        	<div class="play-btn">
+	        		<svg class="triangle1" ng-click="expandCircle1()"></svg>
 	        		<svg class="animation-circle circle1" ng-click="expandCircle1()"></svg>
 	        		<!-- <img src="../images/play.png" alt="Play Video"> -->
 
