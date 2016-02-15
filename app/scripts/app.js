@@ -15,7 +15,8 @@ angular
     'ngAnimate',
     'ngResource',
     'ui.router',
-    'angularGrid'
+    'angularGrid',
+    'vimeoEmbed'
   ])
   .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
       $urlRouterProvider.otherwise('/');
@@ -72,6 +73,15 @@ angular
             'primarycontent@': {
               templateUrl: 'views/contact.html',
               data: {position: [2,1]}
+            }
+          }
+        })
+
+        .state('app.showreel', {
+          url:'showreel',
+          views: {
+            'primarycontent@': {
+              templateUrl: 'views/showreel.html',
             }
           }
         })

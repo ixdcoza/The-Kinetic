@@ -1,4 +1,12 @@
 <div class="vid-stage">
+	<div class="close-btn" ng-click="reverseExpand()">
+		close
+	</div>
+	<div class="video-container" ng-repeat="video in selectedProject.videos">
+		{{video.title}}
+
+		<vimeo-video player-id="video1" video-id="119763015" player-width="960" player-height="540"></vimeo-video>
+	</div>
 </div>
 
 <div class="project-inner">
@@ -8,8 +16,22 @@
 	        	<h1>{{video.title}}</h1>
 	        	<p>{{video.type}}</p>
 	        	<div class="play-btn">
+	        		<svg class="animation-circle circle1" ng-click="expandCircle1()"></svg>
 	        		<!-- <img src="../images/play.png" alt="Play Video"> -->
-	        		<svg class="animation-circle {{video.playTrigger}}" ng-click="expandCircle()"></svg>
+
+	        			
+	        			<!-- <div ng-if="video.id === 1">
+	        				<svg class="animation-circle circle1" ng-click="expandCircle1()"></svg>
+	        			</div>
+	        			<div ng-if="video.id === 2">
+	        				<svg class="animation-circle circle2" ng-click="expandCircle2()"></svg>
+	        			</div>
+	        			<div ng-if="video.id === 3">
+	        				<svg class="animation-circle circle3" ng-click="expandCircle3()"></svg>
+	        			</div> -->
+	        			
+	        			
+
 	        		<!-- <svg height="100" width="100"  ng-click="expandCircle()">
 	        		  <circle id="circle" cx="50" cy="50" r="48" stroke="white" stroke-width="3" fill="black" />
 	        		</svg> -->
@@ -47,24 +69,23 @@ Project Details Page
  	<div class="container project-copy">
 		<div class="row">
 			<div class="col-md-2 col-md-offset-1 s1">
-				<h2 ng-click="reverseExpand()">Project <br/>Details</h2>
+				<h2>Project <br/>Details</h2>
 			</div>
 			<div class="col-md-7 col-md-offset-1">
-				<p>
-				The Afrisam SAIA Awards aim to recognise outstanding achievement in sustainable architecture. To compliment their vision, The Kinetic was asked to create a series of videos for online marketing as well as a series of event specific AVs to reveal the winner's in each category. We developed a stop frame approach to further expand on the visual style developed in previous years. The concept explores the creative process of architecture through an abstracted examination of their tools.</p>
-
-				<p>The Afrisam SAIA Awards aim to recognise outstanding achievement in sustainable architecture. To compliment their vision, The Kinetic was asked to create a series of videos for online marketing as well as a series of event specific AVs to reveal the winner's in each category. We developed a stop frame approach to further expand on the visual style developed in previous years.</p>
+				<div ng-bind-html="projectDescription"></div>
 				
 			</div>
 		</div>
-		<div class="row project-credits">
+		<div class="row project-credits" ng-if="selectedProject.sound || selectedProject.collaborators || selectedProject.agency">
 			<div class="col-md-2 col-md-offset-1 s1">
 				<h2>Credits</h2>
 			</div>
 			<div class="col-md-7 col-md-offset-1">
-				<p><strong>Agency:</strong> Breinstorm<br/>
-				<strong>Collaborator:</strong> Directing and editing: Ian Henderson<br/>
-				<strong>Sound:</strong> Directing and editing: Ian Henderson</p>
+				<p ng-if="selectedProject.agency"><strong>Agency:</strong> <span ng-bind-html="projectAgency"</span>></p>
+				<p ng-if="selectedProject.collaborators"><strong>Collaborators:</strong> <span ng-bind-html="projectCollaborators"</span>></p>
+				<p ng-if="selectedProject.sound"><strong>Sound:</strong> <span ng-bind-html="projectSound"</span>></p>
+				<!-- <strong>Collaborator:</strong> Directing and editing: Ian Henderson<br/>
+				<strong>Sound:</strong> Directing and editing: Ian Henderson -->
 			</div>
 		</div>
 	</div>

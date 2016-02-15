@@ -80,7 +80,7 @@ video {
     z-index: 0;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-    background: url('http://demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background: url('images/poster.jpg') no-repeat;
     background-size: cover;
     transition: 1s opacity;
 }
@@ -535,6 +535,7 @@ video {
         -webkit-transform: translateY(-50%);
         span {
           right: 10%!important;
+          font-size: 0.9em;
         }
       }
     }
@@ -609,6 +610,9 @@ video {
 
 .project-credits {
   margin-top: 40px;
+  p {
+    margin: 0 0 5px 0;
+  }
 }
 
 .owl-stage-outer {
@@ -629,7 +633,6 @@ video {
   font-family: 'Centuma-Bold';
   text-decoration: none;
   text-transform: uppercase;
-  background: #e3e3e3;
   padding-bottom: 20px;
   a {
     color: #000;
@@ -747,6 +750,7 @@ p {
     width: 100%!important;
     background-repeat: no-repeat;
     background-position: center center;
+    background-color:rgba(0, 0, 0, 0.8);
     .item-assets {
       text-align:center;
       position: absolute;
@@ -780,22 +784,73 @@ p {
   }
 }
 
+.video-container {
+  height: 100%;
+  vimeo-video {
+    iframe {
+    //   height: 90%!important;
+    //   width: 90%!important;
+      left: 50%;
+      top: 50%;
+      position: absolute;
+      margin-left: -480px;
+      margin-top: -270px;
+    }
+  }
+}
+
 .vid-stage {
   position: absolute;
   top: 0;
-  bottom: 100%;
+  display: none;
+  height: 100%;
   left: 0;
   right: 0;
-  background: red;
+  background: #000;
   z-index: 1010;
+  .close-btn {
+    position: absolute;
+    top: 30px;
+    cursor: pointer;
+    right: 30px;
+    color: white;
+  }
 }
 
 .dynamic-grid {
   position: relative;
-  display: none;
 }
 .dynamic-grid.angular-grid {
   display: block;
+  a {
+    &:hover {
+      .img_overlay {
+        display: block;
+      }
+    }
+    .img_overlay {
+      position: absolute;
+      background: rgba(0,0,0,0.8);
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: none;
+      color: white;
+      padding: 0 15px;
+      text-align: center;
+      h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+      }
+    }
+    img {
+    }
+  }
 }
 .grid {
   position: absolute;

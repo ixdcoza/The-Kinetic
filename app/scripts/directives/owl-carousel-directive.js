@@ -23,7 +23,6 @@
                     navigation: true, 
                     pagination: false, 
                     items: 1,
-                    loop: false,
                     // autoplay: true,
                     // autoplayTimeout: 2000,
                     // autoplayHoverPause: true,

@@ -13,7 +13,8 @@
     "waypoints": "*",
     "owl.carousel": "*",
     "angulargrid": "*",
-    "Snap.svg": "*"
+    "Snap.svg": "*",
+    "angular-vimeo-embed": "*"
   },
   "devDependencies": {
     "angular-mocks": "^1.3.0"
