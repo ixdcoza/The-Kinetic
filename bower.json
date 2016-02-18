@@ -14,7 +14,7 @@
     "owl.carousel": "*",
     "angulargrid": "*",
     "Snap.svg": "*",
-    "angular-vimeo-embed": "*"
+    "ng-videosharing-embed": "*"
   },
   "devDependencies": {
     "angular-mocks": "^1.3.0"

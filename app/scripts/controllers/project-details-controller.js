@@ -13,10 +13,23 @@
 	  	.controller('ProjectsDetailCtrl', ['$scope', '$sce', '$stateParams', '$timeout', 'ProjectService', function($scope, $sce, $stateParams, $timeout, ProjectService){
           
 
+	  		// Define selectedProject
           	$scope.selectedProject = ProjectService.find($stateParams.id);
 
-          	$scope.nextProject = $scope.selectedProject.id + 1;
-          	$scope.prevProject = $scope.selectedProject.id - 1;
+          	// Previous and Next Projects
+          	var projects = ProjectService.list();
+          	$scope.projectTotal = projects.length;
+          	if ($scope.selectedProject.id === 1) {
+          		$scope.prevProject = $scope.projectTotal;
+          		$scope.nextProject = $scope.selectedProject.id + 1;
+          	}
+          	else if ($scope.selectedProject.id === $scope.projectTotal) {
+          		$scope.nextProject = 1;
+          		$scope.prevProject = $scope.selectedProject.id - 1;
+          	} else {
+          		$scope.nextProject = $scope.selectedProject.id + 1;
+          		$scope.prevProject = $scope.selectedProject.id - 1;
+          	}
 
 
           	$scope.descriptionHTML = $scope.selectedProject.description;
@@ -40,18 +53,20 @@
 
                  		// $scope.i = filterObj.title;
 
-                 		console.log($scope.selectedProject.id);
+                 		// console.log($scope.selectedProject.id);
 
-                 		var s = Snap(".circle1");
-                 		var t = Snap(".triangle1");
-                 		// var s2 = Snap(".circle2");
+                 		var c1 = Snap("#circle1");
+                 		var c2 = Snap("#circle2");
+
+                 		var t1 = Snap(".triangle1");
+                 		var t2 = Snap(".triangle2");
                  		// var s3 = Snap(".circle3");
 
-             		    var playCircle1 = s.rect(100, 100, 100, 100, 50);
-             		    // var playCircle2 = s2.circle(50, 50, 48);
-             		    // var playCircle3 = s3.circle(50, 50, 48);
+             		    var playCircle1 = c1.rect(100, 100, 100, 100, 50);
+             		    var playCircle2 = c2.rect(100, 100, 100, 100, 50);
 
-             		    var playTriangle1 = t.polygon(0,0,30,20,0,40);
+             		    var playTriangle1 = t1.polygon(0,0,30,20,0,40);
+             		    var playTriangle2 = t2.polygon(0,0,30,20,0,40);
 
 
              		    playTriangle1.attr({ 
@@ -59,10 +74,12 @@
 							id: 'playbutton',
              		    });
 
+             		    playTriangle2.attr({ 
+             		    	fill: "#fff",
+							id: 'playbutton2',
+             		    });
+
                  		playCircle1.attr({
-                 	    	// fill: "black",
-                 	    	// stroke: "white",
-                 	    	// strokeWidth: 3,
                  	    	fillOpacity: 0.7,
                  	    	fill: '#000',
 							stroke: '#fff',
@@ -73,36 +90,33 @@
 							y: 0
                  		});
 
-                 		// playCircle2.attr({
-                 	 //    	fill: "black",
-                 	 //    	stroke: "blue",
-                 	 //    	strokeWidth: 3,
-                 	 //    	opacity: 0.7
-                 		// });
+                 		playCircle2.attr({
+                 	    	fillOpacity: 0.7,
+                 	    	fill: '#000',
+							stroke: '#fff',
+							strokeOpacity: 1,
+							strokeWidth: 4,
+							id: 'point',
+							x: 0,
+							y: 0
+                 		});
 
-                 		// playCircle3.attr({
-                 	 //    	fill: "black",
-                 	 //    	stroke: "white",
-                 	 //    	strokeWidth: 3,
-                 	 //    	opacity: 0.7
-                 		// });
 
                  		// // create a new timeline to expand playCircle1 but keep it paused
-                 		var tlExpand1 = new TimelineMax({paused: true});
-                 		// $scope.tlExpand2 = new TimelineMax({paused: true});
-                 		// $scope.tlExpand3 = new TimelineMax({paused: true});
+                 		$scope.tlExpand1 = new TimelineMax({paused: true});
+                 		$scope.tlExpand2 = new TimelineMax({paused: true});
 
                  		var tlVidHeader = new TimelineMax({paused: true});
                  		var tlVidStage = new TimelineMax({paused: true});
 
 
                  		// // Actual animation:
-                 		tlExpand1.to(playCircle1.node, 0.1, {
+                 		$scope.tlExpand1.to(playCircle1.node, 0.1, {
                  			attr: {
                  				stroke: "black"
                  		}
                  		});
-                 		tlExpand1.to(playCircle1.node, 0.6, {
+                 		$scope.tlExpand1.to(playCircle1.node, 0.6, {
                  			css: {
                  		        // scaleX: 10.0,
                  		        // scaleY: 10.0,
@@ -123,11 +137,46 @@
 	                 		ease: Expo.easeIn
                  		});	
 
-                 		tlExpand1.to(playTriangle1.node, 0.2, {
+                 		$scope.tlExpand1.to(playTriangle1.node, 0.2, {
                  			css: {
                  				autoAlpha: 0
                  			},
                  		},'-=0.7');	
+
+
+                 		$scope.tlExpand2.to(playCircle2.node, 0.1, {
+                 			attr: {
+                 				stroke: "black"
+                 		}
+                 		});
+                 		$scope.tlExpand2.to(playCircle2.node, 0.6, {
+                 			css: {
+                 		        // scaleX: 10.0,
+                 		        // scaleY: 10.0,
+                 		        // transformOrigin: "center center",
+                 		        autoAlpha: 1
+                 		    },
+	                 		attr: {
+	                 			rx: 1000,
+     							ry: 1000,
+     							fill: '#000',
+     							fillOpacity: 1.0,
+     							stroke: '#000',
+     							width: 2000,
+     							height: 2000,
+     							x: -1000,
+     							y: -1000,
+	                 		}  ,
+	                 		ease: Expo.easeIn
+                 		});	
+
+                 		$scope.tlExpand2.to(playTriangle2.node, 0.2, {
+                 			css: {
+                 				autoAlpha: 0
+                 			},
+                 		},'-=0.7');	
+
+                 		
 
                  		tlVidHeader.to('.video-header', 0.6, {
                  			css: {
@@ -161,52 +210,22 @@
 
 
 
-                 		// $scope.tlExpand2.to(playCircle2.node, 0.1, {
-                 		// 	attr: {
-                 		// 		stroke: "black"
-                 		// }
-                 		// });
-                 		// $scope.tlExpand2.to(playCircle2.node, 0.6, {
-                 		// 		css: {
-                 		//         scaleX: 10.0,
-                 		//         scaleY: 10.0,
-                 		//         transformOrigin: "center center",
-                 		//         autoAlpha: 1
-                 		//     },
-	                 	// 	attr: {
-	                 	// 		fill: "black"
-	                 	// 	}  ,
-	                 	// 	ease: Expo.easeIn
-                 		// });	
-
-                 		// $scope.tlExpand3.to(playCircle3.node, 0.1, {
-                 		// 	attr: {
-                 		// 		stroke: "black"
-                 		// }
-                 		// });
-                 		// $scope.tlExpand3.to(playCircle3.node, 0.6, {
-                 		// 		css: {
-                 		//         scaleX: 10.0,
-                 		//         scaleY: 10.0,
-                 		//         transformOrigin: "center center",
-                 		//         autoAlpha: 1
-                 		//     },
-	                 	// 	attr: {
-	                 	// 		fill: "black"
-	                 	// 	}  ,
-	                 	// 	ease: Expo.easeIn
-                 		// });	
-
-
-
-
 
 		         // }); // end forEach
 
 
           		 var expandCircle1 = function () {
           		 
-		         	tlExpand1.play();
+		         	$scope.tlExpand1.play();
+		         	tlVidHeader.play();
+		         	tlVidStage.play();
+		         	$(".content-area").css("overflow-y", "hidden");	
+
+		         };
+
+		         var expandCircle2 = function () {
+          		 
+		         	$scope.tlExpand2.play();
 		         	tlVidHeader.play();
 		         	tlVidStage.play();
 		         	$(".content-area").css("overflow-y", "hidden");	
@@ -218,7 +237,8 @@
 		         	
 		         	tlVidStage.reverse();
 		         	tlVidHeader.reverse();
-		         	tlExpand1.reverse();
+		         	$scope.tlExpand1.reverse();
+		         	$scope.tlExpand2.reverse();
 		         	$(".content-area").css("overflow-y", "auto");	
 		         };
 
@@ -233,7 +253,7 @@
           		 // Nitty Gritty
           		 $scope = angular.extend($scope, {
           		 	expandCircle1 : expandCircle1,
-          		 	// expandCircle2 : expandCircle2,
+          		 	expandCircle2 : expandCircle2,
           		 	// expandCircle3 : expandCircle3,
           		 	reverseExpand : reverseExpand
           		 });

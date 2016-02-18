@@ -4,8 +4,6 @@
 	</div>
 	<div class="video-container" ng-repeat="video in selectedProject.videos">
 		{{video.title}}
-
-		<!-- <vimeo-video player-id="video1" video-id="119763015" player-width="960" player-height="540"></vimeo-video> -->
 	</div>
 </div>
 
@@ -16,38 +14,20 @@
 	        	<h1>{{video.title}}</h1>
 	        	<p>{{video.type}}</p>
 	        	<div class="play-btn">
-	        		<svg class="triangle1" ng-click="expandCircle1()"></svg>
-	        		<svg class="animation-circle circle1" ng-click="expandCircle1()"></svg>
-	        		<!-- <img src="../images/play.png" alt="Play Video"> -->
-
-	        			
-	        			<!-- <div ng-if="video.id === 1">
-	        				<svg class="animation-circle circle1" ng-click="expandCircle1()"></svg>
+	        		        			
+	        			<div ng-if="video.id === 1">
+	        				<svg class="triangle triangle1" ng-click="expandCircle1()"></svg>
+	        				<svg id="circle1" class="animation-circle" ng-click="expandCircle1()"></svg>
 	        			</div>
 	        			<div ng-if="video.id === 2">
-	        				<svg class="animation-circle circle2" ng-click="expandCircle2()"></svg>
+	        				<svg class="triangle triangle2" ng-click="expandCircle2()"></svg>
+	        				<svg id="circle2" class="animation-circle" ng-click="expandCircle2()"></svg>
 	        			</div>
-	        			<div ng-if="video.id === 3">
-	        				<svg class="animation-circle circle3" ng-click="expandCircle3()"></svg>
-	        			</div> -->
-	        			
-	        			
-
-	        		<!-- <svg height="100" width="100"  ng-click="expandCircle()">
-	        		  <circle id="circle" cx="50" cy="50" r="48" stroke="white" stroke-width="3" fill="black" />
-	        		</svg> -->
 
 	        	</div>
         	</div>
       	</div>
 	</data-owl-carousel>
-
-	<!-- <div masonry>
-	    <div class="masonry-brick" ng-repeat="image in selectedProject.images">
-	        <img ng-src="{{ image }}" alt="A masonry brick">
-	    </div>
-	</div> -->
-
 
 	<!-- PREVIOUS VIDEO -->
 	<div class="arrow arrow-left">

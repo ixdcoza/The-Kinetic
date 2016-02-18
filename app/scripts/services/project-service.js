@@ -101,20 +101,20 @@
                 {
                   id : 1,
                   title : 'Armour',
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/2/011.jpg',
+                  type : 'Branding and Design',
+                  cover: '../../images/projects/2/cover.jpg',
                 },
                 {
                   id : 2,
-                  title : 'Armour',
+                  title : 'Branding and Design',
                   type : 'Show Package 3',
-                  cover: '../../images/projects/2/011.jpg',
+                  cover: '../../images/projects/2/cover.jpg',
                 }]
           },
           {
               id: 3,
-              slug: 'basa-awards-av',
-              name: 'BASA Awards AV',
+              slug: 'basa-awards',
+              name: 'BASA Awards',
               description: "<p>The Business of the Arts South Africa is a non-profit organization that seeks to partner big business with local artists. An annual awards ceremony gives recognition to companies that have made a substantial and sustainable contribution to the arts, previous winners of this coveted award include Cell C, Deloitte and Absa.</p><p>It is a worthy cause and one that has over the years ensured a thriving culture of corporately funded artistic expression, adding to the already substantial body of world renowned work produced by South African artists. When we were asked to create a series of video pieces for the award ceremony, we were very excited to add our name to the long list of companies that support and believe in local art.</p>",
               thumb: '../../images/projects/3/thumb.jpg',
               agency: "<a href='#'>Some Agency Name</a>",
@@ -140,21 +140,21 @@
               videos : [
                 {
                   id : 1,
-                  title : 'BASA Awards AV',
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/3/010.jpg',
+                  title : 'BASA Awards',
+                  type : 'Awards AV',
+                  cover: '../../images/projects/3/cover.jpg',
                 },
                 {
                   id : 2,
-                  title : 'BASA Awards AV',
+                  title : 'Awards AV',
                   type : 'Show Package 3',
-                  cover: '../../images/projects/3/010.jpg',
+                  cover: '../../images/projects/3/cover.jpg',
                 }]
           },
           {
               id: 4,
-              slug: 'samsung-amaze-africa',
-              name: 'Samsung Amaze Africa',
+              slug: 'samsung',
+              name: 'Samsung',
               description: "<p>The Kinetic was approached by Breinstorm Brand Architects to create a series of AV projection elements for the Samsung Amaze Africa fashion show at the Pretoria City Hall. Each fashion designer was paired with an accessory designer and together they designed a line of fashion inspired by a specific type of fauna and flora found at the National Museum of Natural History across the road from where the show was held.<p></p>The AV elements also had to stem from this Natural object inspiration and were key in the creation of the lighting and overall show design.</p>",
               thumb: '../../images/projects/4/thumb.jpg',
               agency: "<a href='#'>Some Agency Name</a>",
@@ -198,15 +198,15 @@
               videos : [
                 {
                   id : 1,
-                  title : 'Samsung Amaze Africa',
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/4/003.jpg',
+                  title : 'Samsung',
+                  type : 'Africa Fashion Week Event',
+                  cover: '../../images/projects/4/cover.jpg',
                 },
                 {
                   id : 2,
-                  title : 'Samsung Amaze Africa',
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/4/003.jpg',
+                  title : 'Samsung',
+                  type : 'Africa Fashion Week Event',
+                  cover: '../../images/projects/4/cover.jpg',
                 }]
           },
           {
@@ -235,14 +235,14 @@
                 {
                   id : 1,
                   title : 'Cennergi',
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/5/005.jpg',
+                  type : 'Launch AV',
+                  cover: '../../images/projects/5/cover.jpg',
                 },
                 {
                   id : 2,
                   title : 'Cennergi',
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/5/005.jpg',
+                  type : 'Launch AV',
+                  cover: '../../images/projects/5/cover.jpg',
                 }]
           },
           {
@@ -276,8 +276,8 @@
           },
           {
               id: 7,
-              slug: 'cancel-fashion-collective',
-              name: 'Cancel Fashion Collective',
+              slug: 'cancel-fashion',
+              name: 'Cancel Fashion',
               description: "<p>Cancel is a collective of fashion designers and fashion event organisers, this project shows the brand development, photography and launch video of the Cancel fashion collective brand.</p>",
               thumb: '../../images/projects/7/thumb.jpg',
               agency: "<a href='#'>Some Agency Name</a>",
@@ -313,21 +313,21 @@
               videos : [
                 {
                   id : 1,
-                  title : 'Cancel Fashion Collective',
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/7/018.jpg',
+                  title : 'Cancel Fashion',
+                  type : 'Branding, design and promo',
+                  cover: '../../images/projects/7/cover.jpg',
                 },
                 {
                   id : 2,
-                  title : 'Cancel Fashion Collective',
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/7/018.jpg',
+                  title : 'Cancel Fashion',
+                  type : 'Branding, design and promo',
+                  cover: '../../images/projects/7/cover.jpg',
                 }]
           },
           {
               id: 8,
-              slug: 'end-year-gift-2015',
-              name: 'End Year Gift 2015',
+              slug: 'end-year-gift',
+              name: 'Year End Gift',
               description: "<p>We made some extra special end year gifts in 2015 with the help of Hope On Hopkins in Cape Town, have a look.</p>",
               thumb: '../../images/projects/8/thumb.jpg',
               agency: "<a href='#'>Some Agency Name</a>",
@@ -347,21 +347,21 @@
               videos : [
                 {
                   id : 1,
-                  title : 'End Year Gift 2015',
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/8/001.jpg',
+                  title : 'Year End Gift',
+                  type : 'Branding and Design',
+                  cover: '../../images/projects/8/cover.jpg',
                 },
                 {
                   id : 2,
-                  title : 'End Year Gift 2015',
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/8/001.jpg',
+                  title : 'Year End Gift',
+                  type : 'Branding and Design',
+                  cover: '../../images/projects/8/cover.jpg',
                 }]
           },
           {
               id: 9,
-              slug: 'exxaro-digital',
-              name: 'Exxaro Digital',
+              slug: 'exxaro',
+              name: 'Exxaro',
               description: "<p>Exxaro, South Africa's largest producer of coal and coal products recently went through a brand refresh. With this came a refresh of their online and video communication. The Kinetic was briefed to align the art direction across digital platforms and to update and modernise all Exxaro's digital communication.</p>",
               thumb: '../../images/projects/9/thumb.jpg',
               agency: "<a href='#'>Some Agency Name</a>",
@@ -393,15 +393,15 @@
               videos : [
                 {
                   id : 1,
-                  title : 'Exxaro Digital',
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/9/011.jpg',
+                  title : 'Exxaro',
+                  type : 'Corporate and Digital',
+                  cover: '../../images/projects/9/cover.jpg',
                 },
                 {
                   id : 2,
-                  title : 'Exxaro Digital',
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/9/011.jpg',
+                  title : 'Exxaro',
+                  type : 'Corporate and Digital',
+                  cover: '../../images/projects/9/cover.jpg',
                 }]
           },
           {
@@ -452,21 +452,21 @@
                 {
                   id : 1,
                   title : 'Familiar',
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/10/002.jpg',
+                  type : 'Illustration',
+                  cover: '../../images/projects/10/cover.jpg',
                 },
                 {
                   id : 2,
                   title : 'Familiar',
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/10/002.jpg',
+                  type : 'Illustration',
+                  cover: '../../images/projects/10/cover.jpg',
                 }]
           },
           {
               id: 11,
               slug: 'grolsch',
               name: 'Grolsch',
-              description: "<p>Branding and Promotion of the VUZU Tv show Heard on the Streets, where aspiring young film-makers get a budget to go out and shoot a 2-3min 'CONVO' about what it means to be young in South Africa. The Brief included an On-air promo, the packaging of the CONVO's as well as various online elements.</p>",
+              description: "<p>Description needed.</p>",
               thumb: '../../images/projects/11/thumb.jpg',
               agency: "<a href='#'>Some Agency Name</a>",
               collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
@@ -507,7 +507,7 @@
           {
               id: 12,
               slug: 'heard-on-the-streets',
-              name: 'Heard On The Streets',
+              name: 'HOTS',
               description: "<p>Description needed.</p>",
               thumb: '../../images/projects/12/thumb.jpg',
               agency: "<a href='#'>Some Agency Name</a>",
@@ -525,7 +525,6 @@
                 '../../images/projects/12/009.jpg',
                 '../../images/projects/12/010.jpg',
                 '../../images/projects/12/011.jpg',
-                '../../images/projects/12/012.jpg',
                 '../../images/projects/12/013.jpg',
                 '../../images/projects/12/014.jpg',
                 '../../images/projects/12/015.jpg',
@@ -538,15 +537,15 @@
               videos : [
                 {
                   id : 1,
-                  title : 'Heard On The Streets',
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/12/004.jpg',
+                  title : 'HOTS',
+                  type : 'Heard On The Streets Promo',
+                  cover: '../../images/projects/12/cover.jpg',
                 },
                 {
                   id : 2,
-                  title : 'Heard On The Streets',
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/12/004.jpg',
+                  title : 'HOTS',
+                  type : 'Heard On The Streets Promo',
+                  cover: '../../images/projects/12/cover.jpg',
                 }]
           },
           {
@@ -592,14 +591,14 @@
                 {
                   id : 1,
                   title : 'I AM',
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/13/015.jpg',
+                  type : 'Branding and Design',
+                  cover: '../../images/projects/13/cover.jpg',
                 },
                 {
                   id : 2,
                   title : 'I AM',
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/13/015.jpg',
+                  type : 'Branding and Design',
+                  cover: '../../images/projects/13/cover.jpg',
                 }]
           },
           {
@@ -663,15 +662,15 @@
               videos : [
                 {
                   id : 1,
-                  title : 'KFC Big Bash League',
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/15/002.jpg',
+                  title : 'KFC Big Bash',
+                  type : 'Promo Concept',
+                  cover: '../../images/projects/15/cover.jpg',
                 },
                 {
                   id : 2,
-                  title : 'KFC Big Bash League',
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/15/002.jpg',
+                  title : 'KFC Big Bash',
+                  type : 'Promo Concept',
+                  cover: '../../images/projects/15/cover.jpg',
                 }]
           },
           {
@@ -704,15 +703,15 @@
               videos : [
                 {
                   id : 1,
-                  title : "L'Amande De Macaron",
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/16/004.jpg',
+                  title : "L'Amande",
+                  type : 'Branding and Design',
+                  cover: '../../images/projects/16/cover.jpg',
                 },
                 {
                   id : 2,
-                  title : "L'Amande De Macaron",
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/16/004.jpg',
+                  title : "L'Amande",
+                  type : 'Branding and Design',
+                  cover: '../../images/projects/16/cover.jpg',
                 }]
           },
           {
@@ -752,15 +751,15 @@
               videos : [
                 {
                   id : 1,
-                  title : 'M-Net Channel Branding',
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/17/003.jpg',
+                  title : 'M-Net',
+                  type : 'Channel Rebrand',
+                  cover: '../../images/projects/17/cover.jpg',
                 },
                 {
                   id : 2,
-                  title : 'M-Net Channel Branding',
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/17/002.jpg',
+                  title : 'M-Net',
+                  type : 'Channel Rebrand',
+                  cover: '../../images/projects/17/cover.jpg',
                 }]
           },
           {
@@ -858,14 +857,14 @@
                 {
                   id : 1,
                   title : 'Nikki Sê Nee',
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/20/002.jpg',
+                  type : 'Show Package',
+                  cover: '../../images/projects/20/cover.jpg',
                 },
                 {
                   id : 2,
                   title : 'Nikki Sê Nee',
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/20/002.jpg',
+                  type : 'Show Package',
+                  cover: '../../images/projects/20/cover.jpg',
                 }]
           },
           {
@@ -929,20 +928,20 @@
                 {
                   id : 1,
                   title : 'PiCA Awards',
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/22/001.jpg',
+                  type : 'Awards AV and Elements',
+                  cover: '../../images/projects/22/cover.jpg',
                 },
                 {
                   id : 2,
                   title : 'PiCA Awards',
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/22/001.jpg',
+                  type : 'Awards AV and Elements',
+                  cover: '../../images/projects/22/cover.jpg',
                 }]
           },
           {
               id: 23,
-              slug: 'reggies-scratch-win-swim',
-              name: 'Reggies - Scratch, Win, Swim',
+              slug: 'reggies',
+              name: 'Reggies',
               description: "<p>A 15 second competition promo for a South African toy store.The brief was as simple as to make the viewer want to lick the screen and want to be on holiday. Short and 'sweet'.</p>",
               thumb: '../../images/projects/23/thumb.jpg',
               agency: "<a href='#'>Some Agency Name</a>",
@@ -960,21 +959,21 @@
               videos : [
                 {
                   id : 1,
-                  title : 'Reggies - Scratch, Win, Swim',
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/23/004.jpg',
+                  title : 'Reggies',
+                  type : 'TVC',
+                  cover: '../../images/projects/23/cover.jpg',
                 },
                 {
                   id : 2,
-                  title : 'Reggies - Scratch, Win, Swim',
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/23/004.jpg',
+                  title : 'Reggies',
+                  type : 'TVC',
+                  cover: '../../images/projects/23/cover.jpg',
                 }]
           },
           {
               id: 24,
-              slug: 'saftas',
-              name: 'SAFTAs',
+              slug: 'safta-awards',
+              name: 'SAFTA Awards',
               description: "<p>The Kinetic designed and executed an original concept for the 2013 South African Film and Video Awards' show graphics and title package, presented live from Gallagher estate, Johannesburg and broadcast exclusively by SABC 3.</p><p>The purpose was to visually align the branding of the night with the objectives of the SAFTA awards itself, where an event unites and celebrates the quality and excellence of South African Film and Television – honouring and promoting the creativity of the writers, directors and technical crews.</p><p>The piece had to match the prestige and glamour of the SAFTAs and we drew heavily on the shape of the trophy, which has become iconic within the industry. The fractured Statuette, becoming whole as the pieces combine, draws a parallel to the industry where great works are forged, often under immense pressure, becoming greater than the sum of their parts.</p>",
               thumb: '../../images/projects/24/thumb.jpg',
               agency: "<a href='#'>Some Agency Name</a>",
@@ -995,21 +994,21 @@
               videos : [
                 {
                   id : 1,
-                  title : 'SAFTAs',
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/24/003.jpg',
+                  title : 'SAFTA Awards',
+                  type : 'Show Package',
+                  cover: '../../images/projects/24/cover.jpg',
                 },
                 {
                   id : 2,
-                  title : 'SAFTAs',
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/24/003.jpg',
+                  title : 'SAFTA Awards',
+                  type : 'Show Package',
+                  cover: '../../images/projects/24/cover.jpg',
                 }]
           },
           {
               id: 25,
-              slug: 'saia-awards',
-              name: "SAIA Awards",
+              slug: 'saia-awards-2011',
+              name: "SAIA Awards 2011",
               description: "<p>A series of AVs The Kinetic produced for the South African Institute of Architects annual award ceremony held in Johannesburg. The Concept centered on the processes architects employ in the creation and design of buildings. The video features an edit of all the elements produced for the ceremony.</p>",
               thumb: '../../images/projects/25/thumb.jpg',
               agency: "<a href='#'>Some Agency Name</a>",
@@ -1046,21 +1045,21 @@
               videos : [
                 {
                   id : 1,
-                  title : "SAIA Awards",
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/25/008.jpg',
+                  title : "SAIA Awards 2011",
+                  type : 'Awards AV and Elements',
+                  cover: '../../images/projects/25/cover.jpg',
                 },
                 {
                   id : 2,
-                  title : "SAIA Awards",
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/25/008.jpg',
+                  title : "SAIA Awards 2011",
+                  type : 'Awards AV and Elements',
+                  cover: '../../images/projects/25/cover.jpg',
                 }]
           },
           {
               id: 26,
-              slug: 'SAIA-Awards-for-Sustainable-Architecture',
-              name: "SAIA Awards for Sustainable Architecture",
+              slug: 'SAIA-Awards-2013',
+              name: "SAIA Awards 2013",
               description: "<p>The Afrisam SAIA Awards aim to recognise outstanding achievement in sustainable architecture. To compliment their vision, The Kinetic was asked to create a series of videos for online marketing as well as a series of event specific AVs to reveal the winner's in each category. We developed a stop frame approach to further expand on the visual style developed in previous years. The concept explores the creative process of architecture through an abstracted examination of their tools.</p>",
               thumb: '../../images/projects/26/thumb.jpg',
               agency: "<a href='#'>Some Agency Name</a>",
@@ -1091,15 +1090,15 @@
               videos : [
                 {
                   id : 1,
-                  title : "SAIA Awards for Sustainable Architecture",
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/26/004.jpg',
+                  title : "SAIA Awards 2013",
+                  type : 'Awards AV and Elements',
+                  cover: '../../images/projects/26/cover.jpg',
                 },
                 {
                   id : 2,
-                  title : "SAIA Awards for Sustainable Architecture",
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/26/004.jpg',
+                  title : "SAIA Awards 2013",
+                  type : 'Awards AV and Elements',
+                  cover: '../../images/projects/26/cover.jpg',
                 }]
           },
           {
@@ -1146,8 +1145,8 @@
           },
           {
               id: 28,
-              slug: 'the-kinetic-business-cards',
-              name: "The Kinetic Business Cards",
+              slug: 'business-cards',
+              name: "Business Cards",
               description: "<p>Description to come</p>",
               thumb: '../../images/projects/28/thumb.jpg',
               agency: "<a href='#'>Some Agency Name</a>",
@@ -1166,21 +1165,21 @@
               videos : [
                 {
                   id : 1,
-                  title : "The Kinetic Business Cards",
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/28/004.jpg',
+                  title : "Business Cards",
+                  type : 'The Kinetic Branding',
+                  cover: '../../images/projects/28/cover.jpg',
                 },
                 {
                   id : 2,
-                  title : "The Kinetic Business Cards",
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/28/004.jpg',
+                  title : "Business Cards",
+                  type : 'The Kinetic Branding',
+                  cover: '../../images/projects/28/cover.jpg',
                 }]
           },
           {
               id: 29,
-              slug: 'three-newtons-three-laws',
-              name: "Three - Newton's three laws",
+              slug: 'laws-of-motion',
+              name: "Laws of Motion",
               description: "<p>The concept behind THREE explores one of the most important theories that formed the basis for our understanding of the natural world.</p><p>The series visually interprets Newton's laws of motion through the relationship between various forces and dynamic bodies set in every day locations.</p>",
               thumb: '../../images/projects/29/thumb.jpg',
               agency: "<a href='#'>Some Agency Name</a>",
@@ -1195,21 +1194,21 @@
               videos : [
                 {
                   id : 1,
-                  title : "Three - Newton's three laws",
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/29/001.jpg',
+                  title : "Laws of Motion",
+                  type : 'Proof of Concept Motion Design',
+                  cover: '../../images/projects/29/cover.jpg',
                 },
                 {
                   id : 2,
-                  title : "Three - Newton's three laws",
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/29/001.jpg',
+                  title : "Laws of Motion",
+                  type : 'Proof of Concept Motion Design',
+                  cover: '../../images/projects/29/cover.jpg',
                 }]
           },
           {
               id: 30,
-              slug: 'uj-be-anything-you-want-to-be',
-              name: "UJ - Be anything you want to be",
+              slug: 'uj',
+              name: "UJ",
               description: "<p>Following the success of their 2010 recruitment run, the University of Johannesburg wanted to expand their communications to broadcast. The Kinetic created this 30sec TVC based on an original artwork made by Am I Collective for UJ. The animation involved the re-creation of dozens 2D illustrated elements into 3D models to create the rich and fantastical world of UJ where you can 'be anything you want you be'.</p>",
               thumb: '../../images/projects/30/thumb.jpg',
               agency: "<a href='#'>Some Agency Name</a>",
@@ -1239,21 +1238,21 @@
               videos : [
                 {
                   id : 1,
-                  title : "UJ - Be anything you want to be",
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/30/003.jpg',
+                  title : "UJ",
+                  type : 'TVC',
+                  cover: '../../images/projects/30/cover.jpg',
                 },
                 {
                   id : 2,
-                  title : "UJ - Be anything you want to be",
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/30/003.jpg',
+                  title : "UJ",
+                  type : 'TVC',
+                  cover: '../../images/projects/30/cover.jpg',
                 }]
           },
           {
               id: 31,
-              slug: 'valo',
-              name: "VALO",
+              slug: 'valo-pictures',
+              name: "VALO Pictures",
               description: "<p>A branding project for our friends at Valo. As the word 'Valo' means light, the concept was as simple as to communicate this meaning, and that this film production company concentrates on creating emotive and beautiful film making.</p>",
               thumb: '../../images/projects/31/thumb.jpg',
               agency: "<a href='#'>Some Agency Name</a>",
@@ -1275,21 +1274,21 @@
               videos : [
                 {
                   id : 1,
-                  title : "VALO",
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/31/001.jpg',
+                  title : "VALO Pictures",
+                  type : 'Branding and Design',
+                  cover: '../../images/projects/31/cover.jpg',
                 },
                 {
                   id : 2,
-                  title : "VALO",
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/31/001.jpg',
+                  title : "VALO Pictures",
+                  type : 'Branding and Design',
+                  cover: '../../images/projects/31/cover.jpg',
                 }]
           },
           {
               id: 32,
-              slug: 'vuzu-amp-astronaut-kiss',
-              name: "Vuzu Amp 'Astronaut Kiss' Promo",
+              slug: 'vuzu-amp',
+              name: "Vuzu Amp",
               description: "<p>A short promo for Vuzu Amp's 'Month of love'.</p>",
               thumb: '../../images/projects/32/thumb.jpg',
               agency: "<a href='#'>Some Agency Name</a>",
@@ -1310,15 +1309,15 @@
               videos : [
                 {
                   id : 1,
-                  title : "Vuzu Amp 'Astronaut Kiss' Promo",
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/32/001.jpg',
+                  title : "Vuzu Amp",
+                  type : 'Promo',
+                  cover: '../../images/projects/32/cover.jpg',
                 },
                 {
                   id : 2,
-                  title : "Vuzu Amp 'Astronaut Kiss' Promo",
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/32/001.jpg',
+                  title : "Vuzu Amp",
+                  type : 'Promo',
+                  cover: '../../images/projects/32/cover.jpg',
                 }]
           }];
           return {

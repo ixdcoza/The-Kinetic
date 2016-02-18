@@ -16,7 +16,7 @@ angular
     'ngResource',
     'ui.router',
     'angularGrid',
-    'vimeoEmbed'
+    'videosharing-embed'
   ])
   .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
       $urlRouterProvider.otherwise('/');
@@ -72,6 +72,8 @@ angular
           views: {
             'primarycontent@': {
               templateUrl: 'views/contact.html',
+              controller: 'ContactCtrl',
+              controllerAs: 'contact',
               data: {position: [2,1]}
             }
           }

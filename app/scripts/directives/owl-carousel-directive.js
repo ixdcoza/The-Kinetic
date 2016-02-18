@@ -20,7 +20,7 @@
               scope.initCarousel = function(element) {
                 // provide any default options you want
                   var defaultOptions = {
-                    navigation: true, 
+                    navigation: false, 
                     pagination: false, 
                     items: 1,
                     // autoplay: true,
@@ -36,6 +36,7 @@
                   }
                   // init carousel
                   $(element).owlCarousel(defaultOptions);
+
 
 
                   $('.arrow-right').click(function() {

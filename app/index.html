@@ -14,42 +14,77 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
-  <body ng-app="kinetixApp">
+  <body ng-app="kinetixApp" ng-controller="AppController">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
 
+    <div class="menu-wrap">
+      <button class="close-button" id="close-button">Close Menu</button>
+      <nav class="menu">
+        <div class="menu-list link-effect" id="menu">
+          <a class="menu-item" ui-sref-active-eq="active" href ui-sref="app"><span data-hover="Home">Home</span></a><br/>
+          <a class="menu-item" ui-sref-active="active" href ui-sref="app.showreel"><span data-hover="Reel">Reel</span></a><br/>
+          <a class="menu-item" ui-sref-active="active" href ui-sref="app.projects"><span data-hover="Portfolio">Portfolio</span></a><br/>
+          <a class="menu-item" ui-sref-active="active" href ui-sref="app.about"><span data-hover="About">About</span></a><br/>
+          <a class="menu-item" ui-sref-active="active" href ui-sref="app.culture"><span data-hover="Culture">Culture</span></a><br/>
+          <a class="menu-item" ui-sref-active="active" href ui-sref="app.contact"><span data-hover="Contact">Contact</span></a>
+        </div>
+      </nav>
+
+    </div>
+
+    <div class="menu-circle">
+        <button class="menu-button" id="open-button">Open Menu</button>
+    </div>
+
+          <div ng-switch="isLoading">
+
+                  <!-- BEGIN: Loading View. -->
+                  <p ng-switch-when="true">
+
+                      Your images are being loaded... {{ percentLoaded }}%
+
+                  </p>
+                  <!-- END: Loading View. -->
+
+                  <!-- BEGIN: Results View. -->
+                  <div
+                      ng-switch-when="false"
+                      ng-switch="isSuccessful">
+
+                      <div ng-switch-when="true">
 
 
-          <div class="menu-wrap">
-            <button class="close-button" id="close-button">Close Menu</button>
-            <nav class="menu">
-              <div class="menu-list link-effect" id="menu">
-                <a class="menu-item" ui-sref-active-eq="active" href ui-sref="app"><span data-hover="Home">Home</span></a><br/>
-                <a class="menu-item" ui-sref-active="active" href ui-sref="app.showreel"><span data-hover="Reel">Reel</span></a><br/>
-                <a class="menu-item" ui-sref-active="active" href ui-sref="app.projects"><span data-hover="Portfolio">Portfolio</span></a><br/>
-                <a class="menu-item" ui-sref-active="active" href ui-sref="app.about"><span data-hover="About">About</span></a><br/>
-                <a class="menu-item" ui-sref-active="active" href ui-sref="app.culture"><span data-hover="Culture">Culture</span></a><br/>
-                <a class="menu-item" ui-sref-active="active" href ui-sref="app.contact"><span data-hover="Contact">Contact</span></a>
+
+                          
+                          <div class="content-wrap">
+                            <div class="content">
+                              
+                              <div ui-view="header"></div>
+                              <div ui-view="primarycontent"></div>
+
+                            </div>
+                          </div><!-- /content-wrap -->
+
+                          
+
+                      </div>
+
+                      <p ng-switch-when="false">
+
+                          <strong>Oops</strong>: One of your images failed to load :(
+
+                      </p>
+
+                  </div>
+                  <!-- END: Results View. -->
+
               </div>
-            </nav>
-
-          </div>
-
-          <div class="menu-circle">
-              <button class="menu-button" id="open-button">Open Menu</button>
-          </div>
-          <div class="content-wrap">
-            <div class="content">
-              
-              <div ui-view="header"></div>
-              <div ui-view="primarycontent"></div>
-
-            </div>
-          </div><!-- /content-wrap -->
 
 
 
@@ -84,10 +119,11 @@
     <script src="bower_components/owl.carousel/dist/owl.carousel.js"></script>
     <script src="bower_components/angulargrid/angulargrid.js"></script>
     <script src="bower_components/Snap.svg/dist/snap.svg-min.js"></script>
-    <script src="bower_components/angular-vimeo-embed/dist/angular-vimeo-embed.min.js"></script>
+    <script src="bower_components/ng-videosharing-embed/build/ng-videosharing-embed.min.js"></script>
     <!-- endbower -->
-    <script src="../bower_components/greensock/src/minified/plugins/ScrollToPlugin.min.js"></script>
     <!-- endbuild -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/ScrollToPlugin.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
 
 
 
@@ -99,8 +135,11 @@
         <script src="scripts/controllers/project-details-controller.js"></script>
         <script src="scripts/services/project-service.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/contact-controller.js"></script>
         <script src="scripts/directives/bg-img-directive.js"></script>
         <script src="scripts/directives/owl-carousel-directive.js"></script>
+        <script src="scripts/controllers/preload-images-controller.js"></script>
+        <script src="scripts/services/preload-image-factory.js"></script>
         <!-- endbuild -->
 </body>
 </html>
