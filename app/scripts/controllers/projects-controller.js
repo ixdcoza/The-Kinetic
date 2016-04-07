@@ -15,45 +15,54 @@
 	angular.module('kinetixApp')
 	  	.controller('ProjectsCtrl', ['$scope', 'ProjectService', '$timeout', function($scope, ProjectService, $timeout){
 
-        	$scope.projects = ProjectService.list();
-        	
+        	$scope.projects = ProjectService.list(); 
+        
+
         	var tl = new TimelineMax({
         		paused: true
         	}),
 
-            tl_vertLoader = new TimelineMax({
-                paused: true
-            }),
+          tl_vertLoader = new TimelineMax({
+              paused: true
+          }),
+
+
 
         	projectTransition = function () {
        
-        		tl.to('.content-area', 1.2, {
+        		    tl.to('.content-area', 1.2, {
         	        scrollTo:{
         	            y: 0
         	        }, 
         	        ease:Power3.easeInOut
         	     });
-                tl_vertLoader.to('.vert-loader', 1.2, {
-                    left: 0, 
-                    ease:Power3.easeInOut
+
+                tl_vertLoader.to('.menu-aux-area', 0.2, {
+                  css: {
+                    autoAlpha: 1,
+                    visibility: 'visible'
+                  },
+                  ease:Power3.easeInOut
+                },'-=1.2')
+                .to('.menu-aux-area', 0, {
+                    autoAlpha: 0,
+                    visibility: 'hidden'
                  });
-                // .to('.project-inner', 0.5, {
-                //     autoAlpha: 0,
-                //     ease:Power3.easeInOut
-                //  });
 
         	    tl.play();
                 tl_vertLoader.restart();
-                $(".content-area").addClass( "transitionClass" );
+                // $(".content-area").addClass( "transitionClass" );
                 $timeout(function() {
                     $(".content-area").removeClass( "transitionClass" );
                 }, 1200);
 
         	};
 
+
         	 $scope = angular.extend($scope, {
         	 	projectTransition : projectTransition
         	 });
+
 
     	}])
 
@@ -65,7 +74,6 @@
                    var desc = obj.description,
                        width = desc.match(/width="(.*?)"/)[1],
                        height = desc.match(/height="(.*?)"/)[1];
-    
                    obj.actualHeight  = height;
                    obj.actualWidth = width;
                });

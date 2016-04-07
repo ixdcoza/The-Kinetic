@@ -92,7 +92,7 @@
 	(function() {
 
 		var bodyEl = document.body,
-			content = document.querySelector( '.content-wrap' ),
+			content = document.querySelector( '.menu-aux-area' ),
 			openbtn = document.getElementById( 'open-button' ),
 			closebtn = document.getElementById( 'close-button' ),
 			menuItem = document.getElementById( 'menu' ),
@@ -107,11 +107,34 @@
 
 			tlmenucircle = new TimelineMax({
 				paused: true
+			}),
+
+			tlrealignmenu = new TimelineMax({
+				paused: true
+			}),
+
+			tl_vertLoader = new TimelineMax({
+				paused: true
 			});
 
-		function init() {
-			initEvents();
+		function toggleMenu() {
+			if( isOpen ) {
+				classie.remove( bodyEl, 'show-menu' );
+				tl.reverse();
+				tlmenucircle.reverse();
+				tlrealignmenu.play();
+				tl_vertLoader.reverse();
+			}
+			else {
+				classie.add( bodyEl, 'show-menu' );
+				tl.play();
+				tlmenucircle.play();
+				tlmenuitems.restart();
+				tl_vertLoader.play();
+			}
+			isOpen = !isOpen;
 		}
+
 
 		function initEvents() {
 			openbtn.addEventListener( 'click', toggleMenu );
@@ -134,39 +157,38 @@
 			} );
 
 
-			tlmenuitems.staggerFrom(".menu-item", 0.3, {top:400, opacity: 0, delay:0.4, ease:Circ.easeOut}, 0.1);
+			tlmenuitems.staggerFrom(".menu-item", 0.3, {top:400, opacity: 0, delay:0.3, ease:Circ.easeOut}, 0.1);
 			tl.to('.menu-wrap', 0.6, {
 				left: 0,
 				bottom: 0,
 				ease: Power1.easeInOut
 			});
 
-			// tlmenucircle.to('.menu-circle', 0.6, {
-			// 	left: -100,
-			// 	ease: Circ.easeInOut
-			// }, "-=0.9");
+			tlmenucircle.to('.menu-circle', 0.6, {
+				left: -100,
+				ease: Circ.easeInOut
+			}, "-=0.9")
+			.to('.menu-circle', 0.6, {
+				top: 29,
+				ease: Circ.easeInOut
+			}, "-=0.9");
 
-
+			tl_vertLoader.to('.menu-aux-area', 0.2, {
+			  css: {
+			    autoAlpha: 1,
+			    visibility: 'visible',
+			    display:'block'
+			  },
+			  ease:Power3.easeInOut
+			});
 
 			
 		}
 
-		function toggleMenu() {
-			if( isOpen ) {
-				classie.remove( bodyEl, 'show-menu' );
-				tl.reverse();
-				tlmenucircle.reverse();
-				console.log('menu closed');
-			}
-			else {
-				classie.add( bodyEl, 'show-menu' );
-				console.log('menu open');
-				tl.play();
-				tlmenucircle.play();
-				tlmenuitems.restart();
-			}
-			isOpen = !isOpen;
+		function init() {
+			initEvents();
 		}
+
 
 		init();
 

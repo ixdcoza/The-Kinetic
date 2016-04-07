@@ -1,27 +1,59 @@
 <div class="vid-stage">
-	<div class="close-btn" ng-click="reverseExpand()">
-		close
-	</div>
-	<div class="video-container" ng-repeat="video in selectedProject.videos">
-		{{video.title}}
+	<div class="video-container">
+		<div ng-repeat="video in selectedProject.videos">
+		<div class="close-btn" ng-if="video.showfull" ng-click="expand(video);reverseExpand();">
+			<div class="glyphicon glyphicon-menu-left"></div>
+			<div class="glyphicon glyphicon-menu-right"></div>
+		
+		</div>	
+				
+				<div class="video-width" ng-if="video.showfull">
+					<div class="aspect-ratio" ng-if="video.showfull">
+						<embed-video ng-if="video.showfull" href="{{video.source}}" autoplay="true" webkitallowfullscreen mozallowfullscreen allowfullscreen></embed-video>
+					</div>
+				</div>
+				</div>
+			
+		</div>
 	</div>
 </div>
 
+
+<div class="projects-nav row">
+	<div class="col-md-5 col-md-offset-1">
+		<h3 ><a ng-click="projectTransition()" href ui-sref="app.projects" > Our Work</a></h3>
+	</div>
+	<div class="col-md-6 text-right">
+		<h3 class="no-upper">{{selectedProject.name}}</h3>
+	</div>
+	
+</div>
+
+
 <div class="project-inner">
-	<data-owl-carousel class="owl-carousel video-header" data-options="">
+	<data-owl-carousel class="owl-carousel video-header" data-options="" ng-if="selectedProject.videos">
       	<div owl-carousel-item="" ng-repeat="video in selectedProject.videos" class="item" back-img="{{video.cover}}">
         	<div class="item-assets">
 	        	<h1>{{video.title}}</h1>
 	        	<p>{{video.type}}</p>
 	        	<div class="play-btn">
 	        		        			
-	        			<div ng-if="video.id === 1">
+	        			<div ng-if="video.id === 1" ng-click="expand(video)">
 	        				<svg class="triangle triangle1" ng-click="expandCircle1()"></svg>
 	        				<svg id="circle1" class="animation-circle" ng-click="expandCircle1()"></svg>
 	        			</div>
-	        			<div ng-if="video.id === 2">
+	        			<div ng-if="video.id === 2" ng-click="expand(video)">
 	        				<svg class="triangle triangle2" ng-click="expandCircle2()"></svg>
 	        				<svg id="circle2" class="animation-circle" ng-click="expandCircle2()"></svg>
+	        			</div>
+	        			<div ng-if="video.id === 3" ng-click="expand(video)">
+	        				<svg class="triangle triangle3" ng-click="expandCircle3()"></svg>
+	        				<svg id="circle3" class="animation-circle" ng-click="expandCircle3()"></svg>
+	        			</div>
+
+	        			<div ng-if="video.id === 4" ng-click="expand(video)">
+	        				<svg class="triangle triangle4" ng-click="expandCircle4()"></svg>
+	        				<svg id="circle4" class="animation-circle" ng-click="expandCircle4()"></svg>
 	        			</div>
 
 	        	</div>
@@ -29,12 +61,23 @@
       	</div>
 	</data-owl-carousel>
 
+		<data-owl-carousel class="owl-carousel video-header" data-options="" ng-if="selectedProject.covers">
+	      	<div owl-carousel-item="" ng-repeat="cover in selectedProject.covers" class="item" back-img="{{cover.image}}">
+	      			<div class="item-assets">
+			        	<h1>{{cover.title}}</h1>
+			        	<p>{{cover.type}}</p>
+
+	        	</div>
+        	</div>
+	      	</div>
+		</data-owl-carousel>
+
 	<!-- PREVIOUS VIDEO -->
-	<div class="arrow arrow-left">
+	<div class="arrow arrow-left" ng-if="selectedProject.videos && selectedProject.videos.length > 1">
 		<span class="glyphicon glyphicon-menu-left arrow-left-mini" aria-hidden="true"></span>
 	</div>
 	<!-- NEXT VIDEO -->
-	<div class="arrow arrow-right" owl-carousel-next>
+	<div class="arrow arrow-right" owl-carousel-next ng-if="selectedProject.videos && selectedProject.videos.length > 1">
 		<span class="glyphicon glyphicon-menu-right arrow-right-mini" aria-hidden="true"></span>
 	</div>
 <!-- 
@@ -48,7 +91,7 @@ Project Details Page
  -->
 
  	<div class="container project-copy">
-		<div class="row">
+		<div class="row" ng-if="selectedProject.description">
 			<div class="col-md-2 col-md-offset-1 s1">
 				<h2>Project <br/>Details</h2>
 			</div>
@@ -57,24 +100,31 @@ Project Details Page
 				
 			</div>
 		</div>
-		<div class="row project-credits" ng-if="selectedProject.sound || selectedProject.collaborators || selectedProject.agency">
+		<div class="row project-credits" ng-if="selectedProject.collaborators || selectedProject.agency">
 			<div class="col-md-2 col-md-offset-1 s1">
 				<h2>Credits</h2>
 			</div>
 			<div class="col-md-7 col-md-offset-1">
 				<p ng-if="selectedProject.agency"><strong>Agency:</strong> <span ng-bind-html="projectAgency"</span>></p>
 				<p ng-if="selectedProject.collaborators"><strong>Collaborators:</strong> <span ng-bind-html="projectCollaborators"</span>></p>
-				<p ng-if="selectedProject.sound"><strong>Sound:</strong> <span ng-bind-html="projectSound"</span>></p>
-				<!-- <strong>Collaborator:</strong> Directing and editing: Ian Henderson<br/>
-				<strong>Sound:</strong> Directing and editing: Ian Henderson -->
 			</div>
 		</div>
 	</div>
-	
-	   
-	<ul class="dynamic-grid" angular-grid="pics" grid-width="400" gutter-size="5" angular-grid-id="gallery" refresh-on-img-load="true" >
+
+	<div class="mobile-project-images">
+				<li ng-repeat="image in selectedProject.images" class="">
+				    <img data-ng-src="{{ image }}" class=""/>
+				</li>
+		
+	</div>
+
+	<ul class="dynamic-grid project-images" angular-grid="pics" grid-width="400" gutter-size="5" angular-grid-id="gallery" refresh-on-img-load="true" >
 	     <li ng-repeat="image in selectedProject.images" class="grid">
-	         <img data-ng-src="{{ image }}" class="grid-img" data-actual-width = "{{pic.actualWidth}}"  data-actual-height="{{pic.actualHeight}}" />
+	     	<a href="{{ image }}" data-lightbox="image-1">
+	     		
+	         <img data-ng-src="{{ image }}" class="grid-img" data-actual-width = "{{pic.actualWidth}}"  data-actual-height="{{pic.actualHeight}}"/>
+
+	         </a>
 	     </li>
 	 </ul>
 
@@ -82,19 +132,37 @@ Project Details Page
 
 	 <div class="pagination row">
 	 	<div class="pagination-top col-md-12">
-	 		<a ng-click="projectTransition()">Back To Top</a>
+	 		<a ng-click="projectTransition()"><i class="glyphicon glyphicon-menu-up"></i><br/>Back To Top</a>
 	 	</div>
 	 	<div class="pagination-bottom row">
-	 		<div class="pagination-prev col-md-6 text-right">
-	 			<a ng-click="projectTransition()" href="#/projects/{{prevProject}}">Prev</a>
+	 		<div class="pagination-prev col-md-6 col-sm-6 col-xs-6 text-right">
+	 			<a ng-click="projectTransition()" href="#/our-work/{{prevProject}}"><i class="glyphicon glyphicon-menu-left"></i> <span>Prev</span></a>
 	 		</div>
-	 		<div class="pagination-next col-md-6">
-	 			<a ng-click="projectTransition()" href="#/projects/{{nextProject}}">Next</a>
+	 		<div class="pagination-next col-md-6 col-sm-6 col-xs-6">
+	 			<a ng-click="projectTransition()" href="#/our-work/{{nextProject}}">Next <i class="glyphicon glyphicon-menu-right"></i></a>
 	 		</div>
 	 	</div>
 	 </div>
 	
 
+
+</div>
+
+<!-- This must be changed. It's here so that a SNAP svg actually gets created regardless of how many videos in array -->
+<div style="display:none;!important">
+
+		<svg class="triangle triangle1"></svg>
+		<svg id="circle1" class="animation-circle"></svg>
+	
+		<svg class="triangle triangle2"></svg>
+		<svg id="circle2" class="animation-circle"></svg>
+	
+		<svg class="triangle triangle3"></svg>
+		<svg id="circle3" class="animation-circle"></svg>
+
+	
+		<svg class="triangle triangle4"></svg>
+		<svg id="circle4" class="animation-circle"></svg>
 
 </div>
 

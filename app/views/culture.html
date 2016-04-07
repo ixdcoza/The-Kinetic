@@ -1,1 +1,24 @@
-<p>This is the culture view.</p>
+<div class="content-area about-container">
+	<div class="container">
+		<div class="header contact">
+			<h1><span>Culture</span></h1>
+		</div>		
+	</div> <!-- / container -->
+	<ul class="dynamic-grid project-images" angular-grid="pics" grid-width="300" gutter-size="0" angular-grid-id="gallery" refresh-on-img-load="true" >
+	     <li ng-repeat="image in images | orderBy: reverse" class="grid">
+	         <img data-ng-src="{{ image }}" class="grid-img" data-actual-width = "{{pic.actualWidth}}"  data-actual-height="{{pic.actualHeight}}"/>
+	     </li>
+	 </ul>
+	 <div class="mobile-project-images">
+	 			<li ng-repeat="image in images">
+	 			    <img data-ng-src="{{ image }}" class="img-responsive"/>
+	 			</li>
+	 	
+	 </div>
+
+	 <div class="container footer">
+			<p>© Copyright 2016 | <a href="http://thekinetic.co.za">The Kinetic</a> | All Rights Reserved | Developed by <a href="http://ixd.co.za">IXD</a></p>
+		</div>
+</div>
+
+

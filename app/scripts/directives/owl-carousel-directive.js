@@ -23,6 +23,7 @@
                     navigation: false, 
                     pagination: false, 
                     items: 1,
+                    loop: false
                     // autoplay: true,
                     // autoplayTimeout: 2000,
                     // autoplayHoverPause: true,
@@ -48,6 +49,8 @@
                     var owl = $(element);
                     owl.trigger('prev.owl.carousel');
                   });
+
+
               };
           }
       };

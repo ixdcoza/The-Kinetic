@@ -14,13 +14,12 @@
          /* jshint ignore:start */
           var projects = [{
               id: 1,
-              slug: 'anglo-american-3d-annual-communications-summit',
-              name: 'Anglo American 3d Annual Communications Summit',
-              description: "<p>For the last 2 years Anglo American has held a global conference to bring together the marketing heads of all the wings in the organisation, aiming to consolidate and strategise a holistic strategy for the year to come. This year Cape Town was selected as the Venue and The Kinetic was brought on board to produce all the digital assets for the conference. Aiming to modernize the company, one of the key areas was the incorporation of an Ipad app rather than having a traditional printed conference program.</p> <p>Further more the delivery included a website for the conference, invitational emails sent out bi-weekly which each included a 1 minute video trailer to the event. The videos’ narratives were linked and built from one to the next. The culmination video including all the teasers along with a resolution message was screened at the conference opening along with on-screen content loops which ran throughout the conference.</p>",
+              slug: 'anglo-american',
+              name: 'Anglo American',
+              description: "<p>In past years Anglo American has held a global conference to bring together the marketing heads of all the wings in the organisation, aiming to consolidate and strategise a holistic strategy for the year to come. Cape Town was selected as the Venue and The Kinetic was brought on board to produce all the digital assets for the conference. Aiming to modernize the company, one of the key areas was the incorporation of an Ipad app rather than having a traditional printed conference program.</p> <p>Furthermore the delivery included a website for the conference, invitational emails sent out bi-weekly which each included a 1 minute video trailer to the event. The videos narratives were linked and built from one to the next. The culmination video including all the teasers along with a resolution message was screened at the conference opening, along with on-screen content loops which ran throughout the conference.</p>",
               thumb: '../../images/projects/1/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://www.hklm.co.za/'>HKLM</a>",
+              collaborators: "<a href='http://www.ryanhall.co.za/'>Ryan Hall</a> (Sound)",
               images: [
                 '../../images/projects/1/001.jpg',
                 '../../images/projects/1/002.jpg',
@@ -46,35 +45,35 @@
               videos : [
                 {
                   id : 1,
-                  title : 'Anglo American Comms Summit',
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/1/018.jpg',
-                  source: '119763015'
+                  title : 'Anglo American',
+                  type : 'Comms Summit Teaser 1',
+                  cover: '../../images/projects/1/cover.jpg',
+                  source: 'https://vimeo.com/36689879'
                 },
                 {
                   id : 2,
-                  title : 'Anglo American Comms Summit',
-                  type : 'Show Package 2',
-                  cover: '../../images/video-cover.jpg',
-                  source: '60631991'
+                  title : 'Anglo American',
+                  type : 'Comms Summit Teaser 2',
+                  cover: '../../images/projects/1/cover2.jpg',
+                  source: 'https://vimeo.com/37301089'
                 },
                 {
                   id : 3,
-                  title : 'Anglo American Comms Summit',
-                  type : 'Show Package 3',
-                  cover: '../../images/video-cover.jpg',
-                  source: '60631991'
+                  title : 'Anglo American',
+                  type : 'App',
+                  cover: '../../images/projects/1/cover3.jpg',
+                  source: 'https://vimeo.com/37938622'
                 }]
           },
           {
               id: 2,
+              order: 4,
               slug: 'armour',
               name: 'Armour',
               description: "<p>A visual identity inspired by bikes, beer and general badassness. The handmade feel of the Armour brand celebrates those who brew the beer they drink and build the bikes they ride.</p>",
               thumb: '../../images/projects/2/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://thekinetic.co.za'>The Kinetic</a>",
+              collaborators: "",
               images: [
                 '../../images/projects/2/001.jpg',
                 '../../images/projects/2/002.jpg',
@@ -97,29 +96,22 @@
                 '../../images/projects/2/020.jpg',
                 '../../images/projects/2/009.jpg',
               ],
-              videos : [
+              covers : [
                 {
                   id : 1,
                   title : 'Armour',
                   type : 'Branding and Design',
-                  cover: '../../images/projects/2/cover.jpg',
-                },
-                {
-                  id : 2,
-                  title : 'Branding and Design',
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/2/cover.jpg',
+                  image: '../../images/projects/2/cover.jpg',
                 }]
           },
           {
               id: 3,
-              slug: 'basa-awards',
-              name: 'BASA Awards',
-              description: "<p>The Business of the Arts South Africa is a non-profit organization that seeks to partner big business with local artists. An annual awards ceremony gives recognition to companies that have made a substantial and sustainable contribution to the arts, previous winners of this coveted award include Cell C, Deloitte and Absa.</p><p>It is a worthy cause and one that has over the years ensured a thriving culture of corporately funded artistic expression, adding to the already substantial body of world renowned work produced by South African artists. When we were asked to create a series of video pieces for the award ceremony, we were very excited to add our name to the long list of companies that support and believe in local art.</p>",
+              slug: 'basa-awards-av',
+              name: 'BASA Awards AV',
+              description: "<p>The Business of the Arts South Africa is a non-profit organization that seeks to partner big business with local artists. An annual awards ceremony gives recognition to companies that have made a substantial and sustainable contribution to the arts. Previous winners of this coveted award include Cell C, Deloitte and Absa.</p><p>It is a worthy cause and one that has over the years ensured a thriving culture of corporately funded artistic expression, adding to the already substantial body of world renowned work produced by South African artists. When we were asked to create a series of video pieces for the award ceremony, we were very excited to add our name to the long list of companies that support and believe in local art.</p>",
               thumb: '../../images/projects/3/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://www.breinstorm.co.za/'>Breinstorm</a>",
+              collaborators: "<a href='http://radioarte.com/'>Sol Rezza, The Existence of the Light 04</a> (Sound)",
               images: [
                 '../../images/projects/3/001.jpg',
                 '../../images/projects/3/002.jpg',
@@ -143,23 +135,18 @@
                   title : 'BASA Awards',
                   type : 'Awards AV',
                   cover: '../../images/projects/3/cover.jpg',
-                },
-                {
-                  id : 2,
-                  title : 'Awards AV',
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/3/cover.jpg',
+                  source: 'https://vimeo.com/49756824'
                 }]
           },
           {
               id: 4,
+              order: 5,
               slug: 'samsung',
               name: 'Samsung',
-              description: "<p>The Kinetic was approached by Breinstorm Brand Architects to create a series of AV projection elements for the Samsung Amaze Africa fashion show at the Pretoria City Hall. Each fashion designer was paired with an accessory designer and together they designed a line of fashion inspired by a specific type of fauna and flora found at the National Museum of Natural History across the road from where the show was held.<p></p>The AV elements also had to stem from this Natural object inspiration and were key in the creation of the lighting and overall show design.</p>",
+              description: "<p>The Kinetic was approached by Breinstorm Brand Architects to create a series of AV projection elements for the Samsung Amaze Africa fashion show at the Pretoria City Hall. Each fashion designer was paired with an accessory designer and together they designed a line of fashion inspired by a specific type of fauna and flora found at the National Museum of Natural History across the road from where the show was held.<p></p>The AV elements also had to stem from this natural object inspiration and were key in the creation of the lighting and overall show design.</p>",
               thumb: '../../images/projects/4/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://www.breinstorm.co.za/'>Breinstorm</a>",
+              collaborators: "<a href='http://www.ryanhall.co.za/'>Ryan Hall</a> (Sound)",
               images: [
                 '../../images/projects/4/001.jpg',
                 '../../images/projects/4/002.jpg',
@@ -201,23 +188,24 @@
                   title : 'Samsung',
                   type : 'Africa Fashion Week Event',
                   cover: '../../images/projects/4/cover.jpg',
+                  source: 'https://vimeo.com/92142943'
                 },
                 {
                   id : 2,
                   title : 'Samsung',
                   type : 'Africa Fashion Week Event',
-                  cover: '../../images/projects/4/cover.jpg',
+                  cover: '../../images/projects/4/cover2.jpg',
+                  source: 'https://vimeo.com/94148169'
                 }]
           },
           {
               id: 5,
               slug: 'cennergi',
               name: 'Cennergi',
-              description: "<p>HKLM commissioned The Kinetic to produce a video for the launch of South Africa's new independant energy provider's brand reveal function. The aim being to showcase the brand’s vibrancy and to leave attendees with a deeper understanding and lasting excitement for Cennergi.</p><p>We also created a series of sponsor boards to coincide with the launch on broadcast television.</p>",
+              description: "<p>HKLM commissioned The Kinetic to produce a video for the brand reveal launch of Cennergi, South Africa's new independant energy provider. The aim being to showcase the brands vibrancy and to leave attendees with a deeper understanding and lasting excitement for Cennergi.</p><p>We also created a series of sponsor boards to coincide with the launch on broadcast television.</p>",
               thumb: '../../images/projects/5/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://www.hklm.co.za/'>HKLM</a>",
+              collaborators: "<a href='http://www.ryanhall.co.za/'>Ryan Hall</a> (Sound)",
               images: [
                 '../../images/projects/5/001.jpg',
                 '../../images/projects/5/002.jpg',
@@ -237,52 +225,60 @@
                   title : 'Cennergi',
                   type : 'Launch AV',
                   cover: '../../images/projects/5/cover.jpg',
+                  source: 'https://vimeo.com/40591762'
                 },
                 {
                   id : 2,
                   title : 'Cennergi',
-                  type : 'Launch AV',
-                  cover: '../../images/projects/5/cover.jpg',
+                  type : 'Sting 1',
+                  cover: '../../images/projects/5/cover2.jpg',
+                  source: 'https://vimeo.com/40644305'
+                },
+                {
+                  id : 3,
+                  title : 'Cennergi',
+                  type : 'Sting 2',
+                  cover: '../../images/projects/5/cover3.jpg',
+                  source: 'https://vimeo.com/40644684'
+                },
+                {
+                  id : 4,
+                  title : 'Cennergi',
+                  type : 'BHS',
+                  cover: '../../images/projects/5/cover4.jpg',
+                  source: 'https://vimeo.com/40853330'
                 }]
           },
           {
               id: 6,
               slug: 'battlecat',
               name: 'Battlecat!',
-              description: "<p>Description still to come here</p>",
+              description: '<p>Branding for our friends at Battlecat, the brief went something like this: <br/><br/>"I like things that look like they could be the logo for a heavy metal band. Somewhere between words scrawled in blood on the wall of a cave and a graffiti tag of a street-poet from the future. If possible I would like it to be Battlecat! with a an exclamation mark, like the exclamation of someone summoning a demon from the depths of the ocean. A bloodcurdling shriek, and a war-cry. Full of fury, and triumph."</p>',
               thumb: '../../images/projects/6/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://thekinetic.co.za'>The Kinetic</a>",
+              collaborators: "",
               images: [
                 '../../images/projects/6/1.jpg',
                 '../../images/projects/6/2.jpg',
                 '../../images/projects/6/3.jpg',
                 '../../images/projects/6/4.jpg'
               ],
-              videos : [
+              covers : [
                 {
                   id : 1,
                   title : 'Battlecat!',
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/6/1.jpg',
-                },
-                {
-                  id : 2,
-                  title : 'Battlecat!',
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/6/1.jpg',
+                  type : 'Branding',
+                  image: '../../images/projects/6/cover.jpg',
                 }]
           },
           {
               id: 7,
               slug: 'cancel-fashion',
               name: 'Cancel Fashion',
-              description: "<p>Cancel is a collective of fashion designers and fashion event organisers, this project shows the brand development, photography and launch video of the Cancel fashion collective brand.</p>",
+              description: "<p>Cancel is a collective of fashion designers and fashion event organisers. This project shows the brand development, photography and launch video of the Cancel fashion collective brand.</p>",
               thumb: '../../images/projects/7/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://thekinetic.co.za'>The Kinetic</a>",
+              collaborators: "<a href='http://www.cocomachete.com/'>Fukkk Offf Love My Shake (LaClopeAuBec Remix)</a> (Sound)",
               images: [
                 '../../images/projects/7/001.jpg',
                 '../../images/projects/7/002.jpg',
@@ -316,23 +312,17 @@
                   title : 'Cancel Fashion',
                   type : 'Branding, design and promo',
                   cover: '../../images/projects/7/cover.jpg',
-                },
-                {
-                  id : 2,
-                  title : 'Cancel Fashion',
-                  type : 'Branding, design and promo',
-                  cover: '../../images/projects/7/cover.jpg',
+                  source: 'https://vimeo.com/11710441'
                 }]
           },
           {
               id: 8,
               slug: 'end-year-gift',
               name: 'Year End Gift',
-              description: "<p>We made some extra special end year gifts in 2015 with the help of Hope On Hopkins in Cape Town, have a look.</p>",
+              description: "<p>We made some extra special year end gifts in 2015 with the help of Hope On Hopkins in Cape Town. Have a look.</p>",
               thumb: '../../images/projects/8/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://thekinetic.co.za'>The Kinetic</a>",
+              collaborators: "<a href='http://hopeonhopkins.co.za/'>Hope On Hopkins</a> (Gin)",
               images: [
                 '../../images/projects/8/001.jpg',
                 '../../images/projects/8/002.jpg',
@@ -344,18 +334,12 @@
                 '../../images/projects/8/008.jpg',
                 '../../images/projects/8/009.jpg',
               ],
-              videos : [
+              covers : [
                 {
                   id : 1,
                   title : 'Year End Gift',
                   type : 'Branding and Design',
-                  cover: '../../images/projects/8/cover.jpg',
-                },
-                {
-                  id : 2,
-                  title : 'Year End Gift',
-                  type : 'Branding and Design',
-                  cover: '../../images/projects/8/cover.jpg',
+                  image: '../../images/projects/8/cover.jpg',
                 }]
           },
           {
@@ -364,11 +348,10 @@
               name: 'Exxaro',
               description: "<p>Exxaro, South Africa's largest producer of coal and coal products recently went through a brand refresh. With this came a refresh of their online and video communication. The Kinetic was briefed to align the art direction across digital platforms and to update and modernise all Exxaro's digital communication.</p>",
               thumb: '../../images/projects/9/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://www.hklm.co.za/'>HKLM</a>",
+              collaborators: "<a href='http://www.ryanhall.co.za/'>Ryan Hall</a> (Sound), Craig Maarschalk (DOP), <a href='http://ianfinchdesign.com/'>Ian Finch</a> (Design)",
               images: [
-                '../../images/projects/9/021.jpg',
+                '../../images/projects/9/021.png',
                 '../../images/projects/9/020.jpg',
                 '../../images/projects/9/001.jpg',
                 '../../images/projects/9/002.jpg',
@@ -382,26 +365,28 @@
                 '../../images/projects/9/010.jpg',
                 '../../images/projects/9/011.jpg',
                 '../../images/projects/9/012.jpg',
-                '../../images/projects/9/013.jpg',
+                '../../images/projects/9/013.png',
                 '../../images/projects/9/014.jpg',
                 '../../images/projects/9/015.jpg',
                 '../../images/projects/9/016.jpg',
                 '../../images/projects/9/017.jpg',
-                '../../images/projects/9/018.jpg',
+                '../../images/projects/9/018.png',
                 '../../images/projects/9/019.jpg',
               ],
               videos : [
                 {
                   id : 1,
                   title : 'Exxaro',
-                  type : 'Corporate and Digital',
+                  type : 'Corporate and Digital - Cut Down',
                   cover: '../../images/projects/9/cover.jpg',
+                  source: 'https://vimeo.com/62076636'
                 },
                 {
                   id : 2,
                   title : 'Exxaro',
-                  type : 'Corporate and Digital',
-                  cover: '../../images/projects/9/cover.jpg',
+                  type : 'Corporate and Digital - Full',
+                  cover: '../../images/projects/9/cover2.jpg',
+                  source: 'https://vimeo.com/62766600'
                 }]
           },
           {
@@ -410,9 +395,8 @@
               name: 'Familiar',
               description: "<p>A design series inspired by the magic of familiar spirits and other legends connecting a person's soul to an animal. Each print embodies a creature of magical origin or connotation.</p>",
               thumb: '../../images/projects/10/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://thekinetic.co.za'>The Kinetic</a>",
+              collaborators: "",
               images: [
                 '../../images/projects/10/001.jpg',
                 '../../images/projects/10/002.jpg',
@@ -444,33 +428,24 @@
                 '../../images/projects/10/028.jpg',
                 '../../images/projects/10/029.jpg',
                 '../../images/projects/10/030.jpg',
-                '../../images/projects/10/031.jpg',
-                '../../images/projects/10/032.jpg',
-                '../../images/projects/10/033.jpg',
+                '../../images/projects/10/031.jpg'
               ],
-              videos : [
+              covers : [
                 {
                   id : 1,
                   title : 'Familiar',
                   type : 'Illustration',
-                  cover: '../../images/projects/10/cover.jpg',
-                },
-                {
-                  id : 2,
-                  title : 'Familiar',
-                  type : 'Illustration',
-                  cover: '../../images/projects/10/cover.jpg',
+                  image: '../../images/projects/10/cover.jpg',
                 }]
           },
           {
               id: 11,
               slug: 'grolsch',
               name: 'Grolsch',
-              description: "<p>Description needed.</p>",
+              description: "<p>The annual SAB conference creates an opportunity for all the SAB brands to showcase their annual sales numbers, future plans and do general brand awareness.</p>",
               thumb: '../../images/projects/11/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://www.sticksa.co.za/'>Stick</a>",
+              collaborators: "<a href='http://www.audiomilitia.com/'>Audio Militia</a> (Sound)",
               images: [
                 '../../images/projects/11/1.jpg',
                 '../../images/projects/11/2.jpg',
@@ -490,29 +465,22 @@
                 '../../images/projects/11/13.jpg',
                 '../../images/projects/11/15.jpg',
               ],
-              videos : [
+              covers : [
                 {
                   id : 1,
                   title : 'Grolsch',
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/11/4.jpg',
-                },
-                {
-                  id : 2,
-                  title : 'Grolsch',
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/11/4.jpg',
+                  type : 'AV Elements',
+                  image: '../../images/projects/11/cover.jpg',
                 }]
           },
           {
               id: 12,
               slug: 'heard-on-the-streets',
               name: 'HOTS',
-              description: "<p>Description needed.</p>",
+              description: "<p>Branding and promotion of the VUZU TV show 'Heard on the Streets', a show where aspiring young film-makers get a budget to go out and shoot a 2-3 min 'CONVO' about what it means to be young in South Africa. The Brief included an on-air promo, the packaging of the CONVO's as well as various online elements.</p>",
               thumb: '../../images/projects/12/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://www.thekinetic.co.za/'>The Kinetic</a>",
+              collaborators: "<a href='http://www.ryanhall.co.za/'>Ryan Hall</a> (Sound)",
               images: [
                 '../../images/projects/12/001.jpg',
                 '../../images/projects/12/002.jpg',
@@ -540,12 +508,7 @@
                   title : 'HOTS',
                   type : 'Heard On The Streets Promo',
                   cover: '../../images/projects/12/cover.jpg',
-                },
-                {
-                  id : 2,
-                  title : 'HOTS',
-                  type : 'Heard On The Streets Promo',
-                  cover: '../../images/projects/12/cover.jpg',
+                  source: 'https://vimeo.com/22697708'
                 }]
           },
           {
@@ -554,9 +517,8 @@
               name: 'I AM',
               description: "<p>A branding and photography project for a South African fashion label.</p>",
               thumb: '../../images/projects/13/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://www.thekinetic.co.za/'>The Kinetic</a>",
+              collaborators: "<a href='http://valopictures.co.za/'>Valo Pictures</a> (DOP)",
               images: [
                 '../../images/projects/13/001.jpg',
                 '../../images/projects/13/002.jpg',
@@ -593,23 +555,17 @@
                   title : 'I AM',
                   type : 'Branding and Design',
                   cover: '../../images/projects/13/cover.jpg',
-                },
-                {
-                  id : 2,
-                  title : 'I AM',
-                  type : 'Branding and Design',
-                  cover: '../../images/projects/13/cover.jpg',
+                  source: 'https://vimeo.com/64143950'
                 }]
           },
           {
               id: 14,
               slug: 'joy-of-jazz',
               name: 'Joy Of Jazz',
-              description: "<p>Joy of Jazz 2014 artist line-up</p>",
+              description: "<p>Joy of Jazz 2014 artist line-up.</p>",
               thumb: '../../images/projects/14/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://www.breinstorm.co.za/'>Breinstorm</a>",
+              collaborators: "",
               images: [
                 '../../images/projects/14/001.jpg',
                 '../../images/projects/14/002.jpg',
@@ -630,25 +586,19 @@
                 {
                   id : 1,
                   title : 'Joy Of Jazz',
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/14/001.jpg',
-                },
-                {
-                  id : 2,
-                  title : 'Joy Of Jazz',
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/14/001.jpg',
+                  type : 'Artist Line-Up ',
+                  cover: '../../images/projects/14/cover.jpg',
+                  source: 'https://vimeo.com/101516323'
                 }]
           },
           {
               id: 15,
               slug: 'kfc-big-bash-league',
               name: 'KFC Big Bash League',
-              description: "<p>T20 games are electrifying; the atmosphere is filled with excitement, action and celebration. Teams go face to face with big hits and epic catches in this fast paced game. It’s a concentration of the most exciting elements of cricket. We wanted to capture these high energy moments and create an equally energetic treatment to reflect this. These moments are heightened with cel animated ‘light storm’ like electric illustrations to express how big the catches, wickets and hits really are. It’s not just cricket it’s High Voltage Cricket.</p>",
+              description: "<p>T20 games are electrifying and the atmosphere is filled with excitement, action and celebration. Teams go face-to-face with big hits and epic catches in this fast paced game. It’s a concentration of the most exciting elements of cricket and we wanted to capture these high energy moments by creating an equally energetic treatment to reflect this. These moments are heightened with cel animated ‘light storm-like’ electric illustrations to express how big the catches, wickets and hits really are. It’s not just cricket, it’s High Voltage Cricket.</p>",
               thumb: '../../images/projects/15/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://www.thekinetic.co.za/'>The Kinetic</a>",
+              collaborators: "",
               images: [
                 '../../images/projects/15/001.jpg',
                 '../../images/projects/15/002.jpg',
@@ -659,18 +609,12 @@
                 '../../images/projects/15/007.jpg',
                 '../../images/projects/15/008.jpg',
               ],
-              videos : [
+              covers : [
                 {
                   id : 1,
                   title : 'KFC Big Bash',
                   type : 'Promo Concept',
-                  cover: '../../images/projects/15/cover.jpg',
-                },
-                {
-                  id : 2,
-                  title : 'KFC Big Bash',
-                  type : 'Promo Concept',
-                  cover: '../../images/projects/15/cover.jpg',
+                  image: '../../images/projects/15/cover.jpg',
                 }]
           },
           {
@@ -679,9 +623,8 @@
               name: "L'Amande De Macaron",
               description: "<p>A corporate identity for a sophisticated, modern and tasty brand. The recipe of the brand lies in bold colours and photographed textures combined with sleek, simple design that intensifies the taste for this handcrafted experience. L'Amande is not colour specific; it blends with each flavour creating an array of flavours and textures to work with and be inspired by. The hand drawn logo combined with crisp, slick design captures the experience of a macaron with its crisp outer shell and gooey filling. L'Amande de Macaron is not just about baking, but about all the flavours of life and the branding serves as a foretaste for this. L'Amande is all for the melting, immaculate, tasty almond perfection that is a Macaron.</p>",
               thumb: '../../images/projects/16/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://www.thekinetic.co.za/'>The Kinetic</a>",
+              collaborators: "",
               images: [
                 '../../images/projects/16/001.jpg',
                 '../../images/projects/16/002.jpg',
@@ -700,29 +643,22 @@
                 '../../images/projects/16/015.jpg',
                 '../../images/projects/16/016.jpg',
               ],
-              videos : [
+              covers : [
                 {
-                  id : 1,
                   title : "L'Amande",
                   type : 'Branding and Design',
-                  cover: '../../images/projects/16/cover.jpg',
-                },
-                {
-                  id : 2,
-                  title : "L'Amande",
-                  type : 'Branding and Design',
-                  cover: '../../images/projects/16/cover.jpg',
+                  image: '../../images/projects/16/cover.jpg'
                 }]
           },
           {
               id: 17,
+              order: 1,
               slug: 'm-net-channel-branding',
               name: 'M-Net Channel Branding',
-              description: "<p>We were invited to take part in a treatment process for the update of South Africa's premier digital satellite TV channel, M-Net. Our main working concept was to bring the brand back to a point where the channels focus was its content. Users know and understand that the channel broadcasts premier television content, and we wanted to focus on that fact. The channel should amplify the content, and through that, itself.</p><p>The channel pay-off line was tweaked to 'Your magic begins here', and this was initiated by the fact that the best content is hosted on the M-Net and is the first channel in the satellite bouquet. This tied into the historic usage of the word 'magic' in M-Net's brand communication and how creating television magic has become synonymous with the viewing public in South Africa.</p><p>Utilising 2 simple and sleek treatment options, we focused on highlighting the world class content and presenting the viewer with a channel they can immediately recognise as M-Net.</p>",
+              description: "<p>We were invited to take part in a treatment process for the update of South Africa's premier digital satellite TV channel, M-Net. Our main working concept was to bring the brand back to a point where the channels focus was its content. Users know and understand that the channel broadcasts premier television content, and we wanted to focus on that fact. The channel should amplify the content, and through that, itself.</p><p>The channel pay-off line was tweaked to 'Your magic begins here', and this was initiated by the fact that the best content is hosted on M-Net and is the first channel in the satellite bouquet. This tied into the historic usage of the word 'magic' in M-Net's brand communication and how creating television magic has become synonymous with the viewing public in South Africa.</p><p>Utilising two simple and sleek treatment options, we focused on highlighting the world class content and presenting the viewer with a channel they can immediately recognise as M-Net.</p>",
               thumb: '../../images/projects/17/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://www.thekinetic.co.za/'>The Kinetic</a>",
+              collaborators: "C-­Saw Media (Agency)",
               images: [
                 '../../images/projects/17/001.jpg',
                 '../../images/projects/17/002.jpg',
@@ -754,23 +690,24 @@
                   title : 'M-Net',
                   type : 'Channel Rebrand',
                   cover: '../../images/projects/17/cover.jpg',
+                  source: 'https://vimeo.com/138601429'
                 },
                 {
                   id : 2,
                   title : 'M-Net',
                   type : 'Channel Rebrand',
-                  cover: '../../images/projects/17/cover.jpg',
+                  cover: '../../images/projects/17/cover2.jpg',
+                  source: 'https://vimeo.com/138601430'
                 }]
           },
           {
               id: 18,
               slug: 'mtv-my-mix-tape',
-              name: 'MTV My Mix Tape',
+              name: 'My Mix Tape',
               description: "<p>A short title sequence and strap for a countdown show on MTV Base that showcases pop and dance music from around Africa.</p>",
               thumb: '../../images/projects/18/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://www.thekinetic.co.za/'>The Kinetic</a>",
+              collaborators: "<a href='http://www.bigmouthstudios.co.za/'>Big Mouth Studios</a> (Sound)",
               images: [
                 '../../images/projects/18/001.jpg',
                 '../../images/projects/18/002.jpg',
@@ -787,60 +724,27 @@
               videos : [
                 {
                   id : 1,
-                  title : 'MTV My Mix Tape',
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/18/007.jpg',
+                  title : 'My Mix Tape',
+                  type : 'Show Package - Title',
+                  cover: '../../images/projects/18/cover.jpg',
+                  source: 'https://vimeo.com/45841226'
                 },
                 {
                   id : 2,
-                  title : 'MTV My Mix Tape',
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/18/007.jpg',
+                  title : 'My Mix Tape',
+                  type : 'Show Package - Strap',
+                  cover: '../../images/projects/18/cover2.jpg',
+                  source: 'https://vimeo.com/45832806'
                 }]
           },
           {
               id: 19,
-              slug: 'mtv-this-is-how-we-bring-it',
-              name: 'MTV This Is How We Bring It',
-              description: "<p>A short promo The Kinetic did for MTV Networks Africa. Package included top and tail graphics, straps and other small elements.</p>",
-              thumb: '../../images/projects/19/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
-              images: [
-                '../../images/projects/19/001.jpg',
-                '../../images/projects/19/002.jpg',
-                '../../images/projects/19/003.jpg',
-                '../../images/projects/19/004.jpg',
-                '../../images/projects/19/006.jpg',
-                '../../images/projects/19/007.jpg',
-                '../../images/projects/19/008.jpg',
-                '../../images/projects/19/009.jpg',
-                '../../images/projects/19/010.jpg',
-              ],
-              videos : [
-                {
-                  id : 1,
-                  title : 'MTV This Is How We Bring It',
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/19/004.jpg',
-                },
-                {
-                  id : 2,
-                  title : 'MTV This Is How We Bring It',
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/19/004.jpg',
-                }]
-          },
-          {
-              id: 20,
               slug: 'nikki-se-nee',
-              name: 'Nikki Sê Nee',
-              description: "<p>Description needed.</p>",
+              name: 'Nikki Se Nee',
+              description: "<p>The Nikki Sê Nee graphics package was done for a new Afrikaans lifestyle channel focusing on the modern day reality of the South African woman. We presented a modern twist to the outdated ‘housewife’ concept by juxtaposing the choices women are faced with in their everyday lives with regards to finances, food, home, work and personal life.</p><p>The shows graphics package aims to depict these new era ideals in a playful and tongue-in-cheek manner.</p>",
               thumb: '../../images/projects/20/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "Hi Mom",
+              collaborators: "<a href='http://www.jurymusic.com/'>Jury Music</a> (Sound)",
               images: [
                 '../../images/projects/20/001.jpg',
                 '../../images/projects/20/007.jpg',
@@ -856,26 +760,20 @@
               videos : [
                 {
                   id : 1,
-                  title : 'Nikki Sê Nee',
+                  title : 'Nikki Se Nee',
                   type : 'Show Package',
                   cover: '../../images/projects/20/cover.jpg',
-                },
-                {
-                  id : 2,
-                  title : 'Nikki Sê Nee',
-                  type : 'Show Package',
-                  cover: '../../images/projects/20/cover.jpg',
+                  source: 'https://vimeo.com/147707636'
                 }]
           },
           {
-              id: 21,
+              id: 20,
               slug: 'nomad',
               name: 'Nomad',
-              description: "<p>Description needed.</p>",
+              description: "<p>Nomad is a clothing brand for those that want to create their own journey through life.</p>",
               thumb: '../../images/projects/21/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://www.thekinetic.co.za/'>The Kinetic</a>",
+              collaborators: "",
               images: [
                 '../../images/projects/21/001.jpg',
                 '../../images/projects/21/002.jpg',
@@ -889,29 +787,22 @@
                 '../../images/projects/21/010.jpg',
                 '../../images/projects/21/011.jpg',
               ],
-              videos : [
+              covers : [
                 {
                   id : 1,
                   title : 'Nomad',
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/21/006.jpg',
-                },
-                {
-                  id : 2,
-                  title : 'Nomad',
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/21/006.jpg',
+                  type : 'Branding',
+                  image: '../../images/projects/21/006.jpg',
                 }]
           },
           {
-              id: 22,
+              id: 21,
               slug: 'pica-awards',
               name: 'PiCA Awards',
-              description: "<p>The Pica Awards ceremony is anannual event showcasing and recognising excellence in magazine publishing. Thispiece explores the lesser seen and often overlooked world of paper, printing and layout. The package included a main awards sequence, category winners and various other smaller elements.</p>",
+              description: "<p>The Pica Awards ceremony is an annual event showcasing and recognising excellence in magazine publishing. This piece explores the lesser seen and often overlooked world of paper, printing and layout. The package included a main awards sequence, category winners and various other smaller elements.</p>",
               thumb: '../../images/projects/22/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://www.breinstorm.co.za/'>Breinstorm</a>",
+              collaborators: "<a href='http://www.ryanhall.co.za/'>Ryan Hall</a> (Sound)",
               images: [
                 '../../images/projects/22/001.jpg',
                 '../../images/projects/22/002.jpg',
@@ -930,23 +821,24 @@
                   title : 'PiCA Awards',
                   type : 'Awards AV and Elements',
                   cover: '../../images/projects/22/cover.jpg',
+                  source: 'https://vimeo.com/18703382'
                 },
                 {
                   id : 2,
                   title : 'PiCA Awards',
                   type : 'Awards AV and Elements',
-                  cover: '../../images/projects/22/cover.jpg',
+                  cover: '../../images/projects/22/cover2.jpg',
+                  source: 'https://vimeo.com/18703876'
                 }]
           },
           {
-              id: 23,
+              id: 22,
               slug: 'reggies',
               name: 'Reggies',
-              description: "<p>A 15 second competition promo for a South African toy store.The brief was as simple as to make the viewer want to lick the screen and want to be on holiday. Short and 'sweet'.</p>",
+              description: "<p>A 15 second competition promo for a South African toy store. The brief was as simple as to make the viewer want to lick the screen and want to be on holiday. Short and sweet.</p>",
               thumb: '../../images/projects/23/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "Switch",
+              collaborators: "<a href='http://www.ryanhall.co.za/'>Ryan Hall</a> (Sound)",
               images: [
                 '../../images/projects/23/001.jpg',
                 '../../images/projects/23/002.jpg',
@@ -962,23 +854,17 @@
                   title : 'Reggies',
                   type : 'TVC',
                   cover: '../../images/projects/23/cover.jpg',
-                },
-                {
-                  id : 2,
-                  title : 'Reggies',
-                  type : 'TVC',
-                  cover: '../../images/projects/23/cover.jpg',
+                  source: 'https://vimeo.com/44240196'
                 }]
           },
           {
-              id: 24,
+              id: 23,
               slug: 'safta-awards',
               name: 'SAFTA Awards',
-              description: "<p>The Kinetic designed and executed an original concept for the 2013 South African Film and Video Awards' show graphics and title package, presented live from Gallagher estate, Johannesburg and broadcast exclusively by SABC 3.</p><p>The purpose was to visually align the branding of the night with the objectives of the SAFTA awards itself, where an event unites and celebrates the quality and excellence of South African Film and Television – honouring and promoting the creativity of the writers, directors and technical crews.</p><p>The piece had to match the prestige and glamour of the SAFTAs and we drew heavily on the shape of the trophy, which has become iconic within the industry. The fractured Statuette, becoming whole as the pieces combine, draws a parallel to the industry where great works are forged, often under immense pressure, becoming greater than the sum of their parts.</p>",
+              description: "<p>The Kinetic designed and executed an original concept for the 2013 South African Film and Television Awards' show graphics and title package, presented live from Gallagher estate, Johannesburg and broadcast exclusively by SABC 3.</p><p>The purpose was to visually align the branding of the night with the objectives of the SAFTA awards itself, where an event unites and celebrates the quality and excellence of South African Film and Television – honouring and promoting the creativity of the writers, directors and technical crews.</p><p>The piece had to match the prestige and glamour of the SAFTAs and we drew heavily on the shape of the trophy, which has become iconic within the industry. The fractured Statuette, becoming whole as the pieces combine, draws a parallel to the industry where great works are forged, often under immense pressure, becoming greater than the sum of their parts.</p>",
               thumb: '../../images/projects/24/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://www.whatwewant.tv/'>What We Want</a>",
+              collaborators: "<a href='http://www.jurymusic.com/'>Jury Music</a> (Sound)",
               images: [
                 '../../images/projects/24/001.jpg',
                 '../../images/projects/24/002.jpg',
@@ -997,23 +883,17 @@
                   title : 'SAFTA Awards',
                   type : 'Show Package',
                   cover: '../../images/projects/24/cover.jpg',
-                },
-                {
-                  id : 2,
-                  title : 'SAFTA Awards',
-                  type : 'Show Package',
-                  cover: '../../images/projects/24/cover.jpg',
+                  source: 'https://vimeo.com/74700623'
                 }]
           },
           {
-              id: 25,
+              id: 24,
               slug: 'saia-awards-2011',
               name: "SAIA Awards 2011",
-              description: "<p>A series of AVs The Kinetic produced for the South African Institute of Architects annual award ceremony held in Johannesburg. The Concept centered on the processes architects employ in the creation and design of buildings. The video features an edit of all the elements produced for the ceremony.</p>",
+              description: "<p>A series of AV's that The Kinetic produced for the South African Institute of Architects' annual awards ceremony held in Johannesburg. The concept centered on the processes architects employ in the creation and design of buildings. The video features an edit of all the elements produced for the ceremony.</p>",
               thumb: '../../images/projects/25/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://www.breinstorm.co.za/'>Breinstorm</a>",
+              collaborators: "",
               images: [
                 '../../images/projects/25/001.jpg',
                 '../../images/projects/25/002.jpg',
@@ -1048,23 +928,17 @@
                   title : "SAIA Awards 2011",
                   type : 'Awards AV and Elements',
                   cover: '../../images/projects/25/cover.jpg',
-                },
-                {
-                  id : 2,
-                  title : "SAIA Awards 2011",
-                  type : 'Awards AV and Elements',
-                  cover: '../../images/projects/25/cover.jpg',
+                  source: 'https://vimeo.com/17555175'
                 }]
           },
           {
-              id: 26,
+              id: 25,
               slug: 'SAIA-Awards-2013',
               name: "SAIA Awards 2013",
-              description: "<p>The Afrisam SAIA Awards aim to recognise outstanding achievement in sustainable architecture. To compliment their vision, The Kinetic was asked to create a series of videos for online marketing as well as a series of event specific AVs to reveal the winner's in each category. We developed a stop frame approach to further expand on the visual style developed in previous years. The concept explores the creative process of architecture through an abstracted examination of their tools.</p>",
+              description: "<p>The Afrisam SAIA Awards aims to recognise outstanding achievement in sustainable architecture. To compliment their vision, The Kinetic was asked to create a series of videos for online marketing as well as a series of event specific AV's to reveal the winners in each category. We developed a stop frame approach to further expand on the visual style developed in previous years. The concept explores the creative process of architecture through an abstracted examination of their tools.</p>",
               thumb: '../../images/projects/26/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://www.breinstorm.co.za/'>Breinstorm</a>",
+              collaborators: "<a href='http://www.ryanhall.co.za/'>Ryan Hall</a> (Sound), <a href='http://thinkfilm.tv'>Ian Henderson</a> (Directing, filming and editing)",
               images: [
                 '../../images/projects/26/001.jpg',
                 '../../images/projects/26/002.jpg',
@@ -1093,65 +967,31 @@
                   title : "SAIA Awards 2013",
                   type : 'Awards AV and Elements',
                   cover: '../../images/projects/26/cover.jpg',
+                  source: 'https://vimeo.com/52990337'
                 },
                 {
                   id : 2,
                   title : "SAIA Awards 2013",
                   type : 'Awards AV and Elements',
-                  cover: '../../images/projects/26/cover.jpg',
-                }]
-          },
-          {
-              id: 27,
-              slug: 'str-crd',
-              name: "STR.CRD",
-              description: "<p>Description yet to come.</p>",
-              thumb: '../../images/projects/27/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
-              images: [
-                '../../images/projects/27/001.jpg',
-                '../../images/projects/27/002.jpg',
-                '../../images/projects/27/003.jpg',
-                '../../images/projects/27/004.jpg',
-                '../../images/projects/27/005.jpg',
-                '../../images/projects/27/006.jpg',
-                '../../images/projects/27/007.jpg',
-                '../../images/projects/27/008.jpg',
-                '../../images/projects/27/009.jpg',
-                '../../images/projects/27/010.jpg',
-                '../../images/projects/27/011.jpg',
-                '../../images/projects/27/012.jpg',
-                '../../images/projects/27/013.jpg',
-                '../../images/projects/27/014.jpg',
-                '../../images/projects/27/015.jpg',
-                '../../images/projects/27/016.jpg',
-                '../../images/projects/27/017.jpg',
-              ],
-              videos : [
-                {
-                  id : 1,
-                  title : "STR.CRD",
-                  type : 'Show Package 1',
-                  cover: '../../images/projects/27/003.jpg',
+                  cover: '../../images/projects/26/cover2.jpg',
+                  source: 'https://vimeo.com/52991648'
                 },
                 {
-                  id : 2,
-                  title : "STR.CRD",
-                  type : 'Show Package 3',
-                  cover: '../../images/projects/27/003.jpg',
+                  id : 3,
+                  title : "SAIA Awards 2013",
+                  type : 'Awards AV - BHS',
+                  cover: '../../images/projects/26/cover3.jpg',
+                  source: 'https://vimeo.com/53081107'
                 }]
           },
           {
-              id: 28,
+              id: 26,
               slug: 'business-cards',
               name: "Business Cards",
-              description: "<p>Description to come</p>",
+              description: "",
               thumb: '../../images/projects/28/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://thekinetic.co.za'>The Kinetic</a>",
+              collaborators: "",
               images: [
                 '../../images/projects/28/001.jpg',
                 '../../images/projects/28/002.jpg',
@@ -1162,29 +1002,22 @@
                 '../../images/projects/28/007.jpg',
                 '../../images/projects/28/008.jpg',
               ],
-              videos : [
+              covers : [
                 {
                   id : 1,
                   title : "Business Cards",
                   type : 'The Kinetic Branding',
-                  cover: '../../images/projects/28/cover.jpg',
-                },
-                {
-                  id : 2,
-                  title : "Business Cards",
-                  type : 'The Kinetic Branding',
-                  cover: '../../images/projects/28/cover.jpg',
+                  image: '../../images/projects/28/cover.jpg',
                 }]
           },
           {
-              id: 29,
+              id: 27,
               slug: 'laws-of-motion',
               name: "Laws of Motion",
               description: "<p>The concept behind THREE explores one of the most important theories that formed the basis for our understanding of the natural world.</p><p>The series visually interprets Newton's laws of motion through the relationship between various forces and dynamic bodies set in every day locations.</p>",
               thumb: '../../images/projects/29/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://www.thekinetic.co.za/'>The Kinetic</a>",
+              collaborators: "<a href='http://www.ryanhall.co.za/'>Ryan Hall</a> (Sound)",
               images: [
                 '../../images/projects/29/001.jpg',
                 '../../images/projects/29/002.jpg',
@@ -1194,26 +1027,42 @@
               videos : [
                 {
                   id : 1,
-                  title : "Laws of Motion",
-                  type : 'Proof of Concept Motion Design',
+                  title : "Newton",
+                  type : '3 Laws of Motion - 1',
                   cover: '../../images/projects/29/cover.jpg',
+                  source: 'https://vimeo.com/70323418'
                 },
                 {
                   id : 2,
-                  title : "Laws of Motion",
-                  type : 'Proof of Concept Motion Design',
-                  cover: '../../images/projects/29/cover.jpg',
+                  title : "Newton",
+                  type : '3 Laws of Motion - 2',
+                  cover: '../../images/projects/29/cover2.jpg',
+                  source: 'https://vimeo.com/70323420'
+                },
+                {
+                  id : 3,
+                  title : "Newton",
+                  type : '3 Laws of Motion - 3',
+                  cover: '../../images/projects/29/cover3.jpg',
+                  source: 'https://vimeo.com/70323419'
+                },
+                {
+                  id : 4,
+                  title : "Newton",
+                  type : '3 Laws of Motion - BHS',
+                  cover: '../../images/projects/29/cover4.jpg',
+                  source: 'https://vimeo.com/70321278'
                 }]
           },
           {
-              id: 30,
+              id: 28,
+              order: 6,
               slug: 'uj',
               name: "UJ",
-              description: "<p>Following the success of their 2010 recruitment run, the University of Johannesburg wanted to expand their communications to broadcast. The Kinetic created this 30sec TVC based on an original artwork made by Am I Collective for UJ. The animation involved the re-creation of dozens 2D illustrated elements into 3D models to create the rich and fantastical world of UJ where you can 'be anything you want you be'.</p>",
+              description: "<p>Following the success of their 2010 recruitment run, the University of Johannesburg wanted to expand their communications to broadcast. The Kinetic created this 30 sec TVC based on an original artwork made by 'Am I Collective' for UJ. The animation involved the re-creation of dozens of 2D illustrated elements into 3D models to create the rich and fantastical world of UJ, where you can 'be anything you want to be'.</p>",
               thumb: '../../images/projects/30/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://www.hklm.co.za/'>HKLM</a>",
+              collaborators: "",
               images: [
                 '../../images/projects/30/001.jpg',
                 '../../images/projects/30/002.jpg',
@@ -1241,23 +1090,17 @@
                   title : "UJ",
                   type : 'TVC',
                   cover: '../../images/projects/30/cover.jpg',
-                },
-                {
-                  id : 2,
-                  title : "UJ",
-                  type : 'TVC',
-                  cover: '../../images/projects/30/cover.jpg',
+                  source: 'https://vimeo.com/29254995'
                 }]
           },
           {
-              id: 31,
+              id: 29,
               slug: 'valo-pictures',
               name: "VALO Pictures",
               description: "<p>A branding project for our friends at Valo. As the word 'Valo' means light, the concept was as simple as to communicate this meaning, and that this film production company concentrates on creating emotive and beautiful film making.</p>",
               thumb: '../../images/projects/31/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://www.thekinetic.co.za/'>The Kinetic</a>",
+              collaborators: "",
               images: [
                 '../../images/projects/31/001.jpg',
                 '../../images/projects/31/002.jpg',
@@ -1271,29 +1114,23 @@
                 '../../images/projects/31/010.jpg',
                 '../../images/projects/31/011.jpg',
               ],
-              videos : [
+              covers : [
                 {
                   id : 1,
                   title : "VALO Pictures",
                   type : 'Branding and Design',
-                  cover: '../../images/projects/31/cover.jpg',
-                },
-                {
-                  id : 2,
-                  title : "VALO Pictures",
-                  type : 'Branding and Design',
-                  cover: '../../images/projects/31/cover.jpg',
+                  image: '../../images/projects/31/cover.jpg'
                 }]
           },
           {
-              id: 32,
+              id: 30,
+              order: 3,
               slug: 'vuzu-amp',
               name: "Vuzu Amp",
               description: "<p>A short promo for Vuzu Amp's 'Month of love'.</p>",
               thumb: '../../images/projects/32/thumb.jpg',
-              agency: "<a href='#'>Some Agency Name</a>",
-              collaborators: "<a href='#'>Stanley</a>, <a href='#'>Frikkie</a>",
-              sound: "<a href='#'>Reggie</a>",
+              agency: "<a href='http://clearwater.co.za/'>Clearwater</a>",
+              collaborators: "<a href='http://songsforsunrise.bandcamp.com/'>A Skyline on Fire & Jacob Israel - ­It's Just A Ride, Honey</a> (Sound) This was not the final music used on the promo. This is only for showcase purposes.",
               images: [
                 '../../images/projects/32/001.jpg',
                 '../../images/projects/32/002.jpg',
@@ -1312,12 +1149,307 @@
                   title : "Vuzu Amp",
                   type : 'Promo',
                   cover: '../../images/projects/32/cover.jpg',
-                },
+                  source: 'https://vimeo.com/119763015'
+                }]
+          },
+          {
+              id: 31,
+              slug: 'basa-logo',
+              name: "BASA Logo",
+              description: "<p>A short logo sequence for 'The Business and the Arts' show on CNBC on DSTV.</p>",
+              thumb: '../../images/projects/33/thumb.jpg',
+              agency: "<a href='http://www.breinstorm.co.za/'>Breinstorm</a>",
+              collaborators: "<a href='http://www.ryanhall.co.za/'>Ryan Hall</a> (Sound)",
+              images: [
+                '../../images/projects/33/001.jpg',
+                '../../images/projects/33/002.jpg',
+                '../../images/projects/33/003.jpg',
+                '../../images/projects/33/004.jpg',
+                '../../images/projects/33/005.jpg',
+                '../../images/projects/33/006.jpg',
+                '../../images/projects/33/007.jpg',
+                '../../images/projects/33/008.jpg',
+                '../../images/projects/33/009.jpg',
+                '../../images/projects/33/010.jpg',
+              ],
+              videos : [
                 {
-                  id : 2,
-                  title : "Vuzu Amp",
-                  type : 'Promo',
-                  cover: '../../images/projects/32/cover.jpg',
+                  id : 1,
+                  title : "BASA",
+                  type : 'Logo Sequence',
+                  cover: '../../images/projects/33/cover.jpg',
+                  source: 'https://vimeo.com/152556187'
+                }]
+          },
+          {
+              id: 32,
+              slug: 'budilink',
+              name: "Budilink",
+              description: "<p>A short, quirky explainer video for Budilink - a new financial and mentorship support programme. The story revolves around a wire and bead craftsman that needs financial support and uses Budilink to help grow his craft into a thriving business.</p>",
+              thumb: '../../images/projects/34/thumb.jpg',
+              agency: "<a href='http://www.twisteffect.com/'>Twisteffect</a>",
+              collaborators: "<a href='http://www.ryanhall.co.za/'>Ryan Hall</a> (Sound)",
+              images: [
+                '../../images/projects/34/001.jpg',
+                '../../images/projects/34/002.jpg',
+                '../../images/projects/34/003.jpg',
+                '../../images/projects/34/004.jpg',
+                '../../images/projects/34/005.jpg',
+                '../../images/projects/34/006.jpg',
+                '../../images/projects/34/007.jpg',
+                '../../images/projects/34/008.jpg',
+                '../../images/projects/34/009.jpg',
+                '../../images/projects/34/010.jpg',
+                '../../images/projects/34/011.jpg',
+                '../../images/projects/34/012.jpg',
+                '../../images/projects/34/013.jpg',
+                '../../images/projects/34/014.jpg',
+                '../../images/projects/34/015.jpg',
+                '../../images/projects/34/016.jpg',
+              ],
+              videos : [
+                {
+                  id : 1,
+                  title : "Budilink",
+                  type : 'Explainer Video',
+                  cover: '../../images/projects/34/cover.jpg',
+                  source: 'https://vimeo.com/152544037'
+                }]
+          },
+          {
+              id: 33,
+              slug: 'cotlands',
+              name: "Cotlands",
+              description: "<p>We worked with HKLM to create this pro-bono PSA for the Cotlands Early Learning Playgroup. The TVC was broadcast on DSTV and seen at Ster-Kinekor Cinemas.</p>",
+              thumb: '../../images/projects/35/thumb.jpg',
+              agency: "<a href='http://www.hklm.co.za/'>HKLM</a>",
+              collaborators: "<a href='http://www.ryanhall.co.za/'>Ryan Hall</a> (Sound), Nimi Pretorius (Script)",
+              images: [
+                '../../images/projects/35/001.jpg',
+                '../../images/projects/35/002.jpg',
+                '../../images/projects/35/003.jpg',
+                '../../images/projects/35/004.jpg',
+                '../../images/projects/35/005.jpg',
+                '../../images/projects/35/006.jpg',
+                '../../images/projects/35/007.jpg',
+                '../../images/projects/35/008.jpg',
+                '../../images/projects/35/009.jpg',
+                '../../images/projects/35/0010.jpg',
+                '../../images/projects/35/0011.jpg',
+              ],
+              videos : [
+                {
+                  id : 1,
+                  title : "Cotlands",
+                  type : 'TVC',
+                  cover: '../../images/projects/35/cover.jpg',
+                  source: 'https://vimeo.com/152422206'
+                }]
+          },
+           {
+              id: 34,
+              slug: 'idwala',
+              name: "Idwala",
+              description: "<p>A full production that included three destinations across South Africa for the Idwala Industrial Holdings Group. The Kinetic was briefed in to create a full corporate video for all their operations.</p>",
+              thumb: '../../images/projects/36/thumb.jpg',
+              agency: "<a href='http://thekinetic.co.za'>The Kinetic</a>",
+              collaborators: "<a href='http://www.ryanhall.co.za/'>Ryan Hall</a> (Sound), Craig Maarschalk (DOP), <a href='http://valopictures.co.za/'>Valo Pictures</a> (DOP)",
+              images: [
+                '../../images/projects/36/001.jpg',
+                '../../images/projects/36/002.jpg',
+                '../../images/projects/36/003.jpg',
+                '../../images/projects/36/004.jpg',
+                '../../images/projects/36/005.jpg',
+                '../../images/projects/36/006.jpg',
+                '../../images/projects/36/007.jpg',
+                '../../images/projects/36/008.jpg',
+                '../../images/projects/36/009.jpg',
+                '../../images/projects/36/0010.jpg',
+                '../../images/projects/36/0011.jpg',
+                '../../images/projects/36/0012.jpg',
+                '../../images/projects/36/0013.jpg',
+                '../../images/projects/36/0014.jpg',
+                '../../images/projects/36/0015.jpg',
+                '../../images/projects/36/0016.jpg',
+                '../../images/projects/36/0017.jpg',
+                '../../images/projects/36/0018.jpg',
+                '../../images/projects/36/0019.jpg',
+                '../../images/projects/36/0020.jpg',
+                '../../images/projects/36/0021.jpg',
+                '../../images/projects/36/0022.jpg',
+                '../../images/projects/36/0023.jpg',
+                '../../images/projects/36/0024.jpg',
+                '../../images/projects/36/0025.jpg',
+                '../../images/projects/36/0026.jpg',
+                '../../images/projects/36/0027.jpg',
+                '../../images/projects/36/0028.jpg',
+                '../../images/projects/36/0029.jpg',
+                '../../images/projects/36/0030.jpg',
+                '../../images/projects/36/0031.jpg',
+                '../../images/projects/36/0032.jpg',
+                '../../images/projects/36/0033.jpg',
+                '../../images/projects/36/0034.jpg',
+                '../../images/projects/36/0035.jpg',
+                '../../images/projects/36/0036.jpg',
+                '../../images/projects/36/0037.jpg',
+                '../../images/projects/36/0038.jpg',
+              ],
+              videos : [
+                {
+                  id : 1,
+                  title : "Idwala",
+                  type : 'Corporate Video',
+                  cover: '../../images/projects/36/cover.jpg',
+                  source: 'https://vimeo.com/152543158'
+                }]
+          },
+          {
+              id: 35,
+              order: 2,
+              slug: 'telkom-futurehood',
+              name: "Telkom Futurehood",
+              description: "<p>A full digital campaign that The Kinetic worked closely on with Praekelt Consulting. The roll‐out included outdoor digital billboards across South Africa, digital advertising screens in malls and retail spaces, HTML5 animated web banners as well as other digital touchpoints.</p>",
+              thumb: '../../images/projects/37/thumb.jpg',
+              agency: "<a href='http://praekelt.com'>Praekelt</a>",
+              images: [
+                '../../images/projects/37/001.jpg',
+                '../../images/projects/37/002.jpg',
+                '../../images/projects/37/003.jpg',
+                '../../images/projects/37/004.jpg',
+                '../../images/projects/37/005.jpg',
+                '../../images/projects/37/006.jpg',
+                '../../images/projects/37/007.jpg',
+                '../../images/projects/37/008.jpg',
+                '../../images/projects/37/009.jpg'
+              ],
+              videos : [
+                {
+                  id : 1,
+                  title : "Telkom",
+                  type : 'Futurehood Campaign',
+                  cover: '../../images/projects/37/cover.jpg',
+                  source: 'https://vimeo.com/152410448'
+                }]
+          },
+          {
+              id: 36,
+              slug: 'telkom-summer',
+              name: "Telkom Summer",
+              description: "<p>A full digital campaign that The Kinetic worked closely on with Praekelt Consulting. The roll‐out included outdoor digital billboards across South Africa, digital advertising screens in malls and retail spaces, HTML5 animated web banners as well as other digital touchpoints.</p>",
+              thumb: '../../images/projects/38/thumb.jpg',
+              agency: "<a href='http://praekelt.com'>Praekelt</a>",
+              images: [
+                '../../images/projects/38/001.jpg',
+                '../../images/projects/38/002.jpg',
+                '../../images/projects/38/003.jpg',
+                '../../images/projects/38/004.jpg',
+                '../../images/projects/38/005.jpg',
+                '../../images/projects/38/006.jpg',
+                '../../images/projects/38/007.jpg',
+                '../../images/projects/38/008.jpg',
+                '../../images/projects/38/009.jpg',
+                '../../images/projects/38/0010.jpg',
+              ],
+              videos : [
+                {
+                  id : 1,
+                  title : "Telkom",
+                  type : 'Summer Campaign',
+                  cover: '../../images/projects/38/cover.jpg',
+                  source: 'https://vimeo.com/152410701'
+                }]
+          },
+          {
+              id: 37,
+              slug: 'telkom-unlimited',
+              name: "Telkom Unlimited",
+              description: "<p>A full digital campaign that The Kinetic worked closely on with Praekelt Consulting. The roll‐out included outdoor digital billboards across South Africa, digital advertising screens in malls and retail spaces, HTML5 animated web banners as well as other digital touchpoints.</p>",
+              thumb: '../../images/projects/39/thumb.jpg',
+              agency: "<a href='http://praekelt.com'>Praekelt</a>",
+              images: [
+                '../../images/projects/39/001.jpg',
+                '../../images/projects/39/002.jpg',
+                '../../images/projects/39/003.jpg',
+                '../../images/projects/39/004.jpg',
+                '../../images/projects/39/005.jpg',
+                '../../images/projects/39/006.jpg',
+                '../../images/projects/39/007.jpg',
+                '../../images/projects/39/008.jpg',
+                '../../images/projects/39/009.jpg'
+              ],
+              videos : [
+                {
+                  id : 1,
+                  title : "Telkom",
+                  type : 'Unlimited Broadband Campaign',
+                  cover: '../../images/projects/39/cover.jpg',
+                  source: 'https://vimeo.com/152410868'
+                }]
+          },
+          {
+              id: 38,
+              slug: 'toeter',
+              name: "toeter",
+              description: "<p>The Kinetic was briefed to create an explainer launch video for Toeter, an Afrikaans social media platform that encourages South Africans to converse in Afrikaans. The animation needed to be as quirky as the script and as descriptive as the Afrikaans language itself. The project also included the essential art direction for the brand. With only a simple logo and a basic colour palette, The Kinetic expanded on this to encompass a more holistic brand vision. Lekker man, nou gaan ons klets!</p>",
+              thumb: '../../images/projects/40/thumb.jpg',
+              agency: "<a href='http://thekinetic.co.za'>The Kinetic</a>",
+              collaborators: "<a href='http://www.ryanhall.co.za/'>Ryan Hall</a> (Sound), Nimi Pretorius (Script)",
+              images: [
+                '../../images/projects/40/001.jpg',
+                '../../images/projects/40/002.jpg',
+                '../../images/projects/40/003.jpg',
+                '../../images/projects/40/004.jpg',
+                '../../images/projects/40/005.jpg',
+                '../../images/projects/40/006.jpg',
+                '../../images/projects/40/007.jpg',
+                '../../images/projects/40/008.jpg',
+                '../../images/projects/40/009.jpg',
+                '../../images/projects/40/0010.jpg',
+                '../../images/projects/40/0011.jpg',
+                '../../images/projects/40/0012.jpg',
+                '../../images/projects/40/0013.jpg',
+                '../../images/projects/40/0014.jpg',
+              ],
+              videos : [
+                {
+                  id : 1,
+                  title : "Toeter",
+                  type : 'Explainer Video',
+                  cover: '../../images/projects/40/cover.jpg',
+                  source: 'https://vimeo.com/152428386'
+                }]
+          },
+          {
+              id: 39,
+              slug: 'tusker',
+              name: "Tusker",
+              description: "<p>The Tusker journey took place all throughout Central and Eastern Africa with varying legs of the race moving through a host of countries. The Kinetic was tasked to visualise and explain this journey through motion design in the form of a graphics package. The package included full art direction, all show elements as well as the title sequence and a custom hand-drawn typeface that was used throughout the show.</p>",
+              thumb: '../../images/projects/41/thumb.jpg',
+              agency: "<a href='http://luckybeanmedia.com/wp/#s-home'>Lucky Bean Media</a>",
+              images: [
+                '../../images/projects/41/001.jpg',
+                '../../images/projects/41/002.jpg',
+                '../../images/projects/41/003.jpg',
+                '../../images/projects/41/004.jpg',
+                '../../images/projects/41/005.jpg',
+                '../../images/projects/41/006.jpg',
+                '../../images/projects/41/007.jpg',
+                '../../images/projects/41/008.jpg',
+                '../../images/projects/41/009.jpg',
+                '../../images/projects/41/0010.jpg',
+                '../../images/projects/41/0011.jpg',
+                '../../images/projects/41/0012.jpg',
+                '../../images/projects/41/0013.jpg',
+                '../../images/projects/41/0014.jpg',
+                '../../images/projects/41/0015.jpg',
+              ],
+              videos : [
+                {
+                  id : 1,
+                  title : "Tusker",
+                  type : 'Show Package',
+                  cover: '../../images/projects/41/cover.jpg',
+                  source: 'https://vimeo.com/152541299'
                 }]
           }];
           return {

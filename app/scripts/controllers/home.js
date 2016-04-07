@@ -10,12 +10,15 @@
 	 * Controller of the kinetixApp
 	 */
 	angular.module('kinetixApp')
-		.controller('HomeCtrl', ['$scope', function($scope){
+		.controller('HomeCtrl', ['$scope', '$timeout', function($scope, $timeout){
 
 	  		$scope.something = "something";
 
+	  		$timeout(function() {
 
+	  			document.getElementById("bgvid").play();
 
+	  		},700);
 
 	  		var tlarrowdown = new TimelineMax({
 	  			paused: false,

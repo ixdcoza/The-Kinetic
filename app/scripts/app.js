@@ -62,6 +62,8 @@ angular
           views: {
             'primarycontent@': {
               templateUrl: 'views/culture.html',
+              controller: 'CultureCtrl',
+              controllerAs: 'culture',
               data: {position: [0,2]}
             }
           }
@@ -90,13 +92,13 @@ angular
 
 
         .state('app.projects', {
-            url:'projects',
+            url:'our-work',
             views: {
               'primarycontent@': {
                 templateUrl:'views/projects.html',
                 controller: 'ProjectsCtrl'
-              },
-            }
+              }
+            },
         })
                 .state('app.projects.detail', {
                   url: '/:id',
@@ -115,7 +117,14 @@ angular
                   }
                 });
 
-      }]);
+      }])
+
+
+    .run(function($rootScope, $location, AnalyticsService) {
+        $rootScope.$on('$stateChangeSuccess', function() {
+          AnalyticsService.recordPageview($location.url());
+       });
+    });
 
 
 

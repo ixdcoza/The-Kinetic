@@ -1,4 +1,4 @@
-<div class="content-area color-white">
+<div class="content-area color-white mobile-bg">
 	<div class="top">
 		<div class="logo-container">
 			<img src="../images/logo.png" alt="The Kinetic">
@@ -11,18 +11,28 @@
 			<h1>Concepts <br/>Images &amp; <br/>Experiences</h1>
 		</div>
 	</div>
-	<div class="bottom">
-		<a href ui-sref="app.projects">
-			<div class="arrow-container">
-				<img src="../images/arrow-down.png" alt="Scroll Down">
+	<div class="bottom home-call-to-action">
+
+		<div class="temp-menu">
+			<div class="menu-list2 link-effect">
+			  <a class="menu-item" ui-sref-active="active" href ui-sref="app.showreel"><span data-hover="Reel">Reel</span></a>
+			  <a class="menu-item" ui-sref-active="active" href ui-sref="app.projects"><span data-hover="Our Work">Our Work</span></a>
+			  <a class="menu-item" ui-sref-active="active" href ui-sref="app.about"><span data-hover="About">About</span></a>
+			  <a class="menu-item" ui-sref-active="active" href ui-sref="app.culture"><span data-hover="Culture">Culture</span></a>
+			  <a class="menu-item" ui-sref-active="active" href ui-sref="app.contact"><span data-hover="Contact">Contact</span></a>
 			</div>
-		</a>
+		</div>
+		<div class="temp-menu-mobile">
+			<div class="menu-list2">
+			  <a class="menu-item" ui-sref-active="active" href ui-sref="app.projects"><span>Explore</span></a>
+			</div>
+		</div>
 	</div>
 </div>
 
 
 
-<video autoplay poster="images/poster.jpg" id="bgvid" loop>
+<video poster="images/poster.jpg" id="bgvid" loop>
   
 	<source src="videos/HomePage10secondloop.webm" type="video/webm">
 	<source src="videos/HomePage10secondloop.mp4" type="video/mp4">

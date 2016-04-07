@@ -2,19 +2,44 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>The Kinetic</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <title>The Kinetic - Johannesburg, South Africa</title>
+    <meta name="description" content="We are the creators of concepts, images and experiences">
+
+    <meta id="Viewport" name="viewport" width="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="bower_components/lightbox2/dist/css/lightbox.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <meta property="og:url" content="http://www.thekinetic.co.za" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The Kinetic" />
+    <meta property="og:description" content="We are the creators of concepts, images and experiences" />
+    <meta property="og:image" content="http://thekinetic.co.za/images/facebook.jpg" />
+<!--
+            ,----,                                                                               ,----,                    
+      ,/   .`|       ,--,                         ,--.                 ,--.                ,/   .`|                    
+    ,`   .'  :     ,--.'|    ,---,.           ,--/  /|   ,---,       ,--.'|    ,---,.    ,`   .'  :   ,---,  ,----..   
+  ;    ;     /  ,--,  | :  ,'  .' |        ,---,': / ',`--.' |   ,--,:  : |  ,'  .' |  ;    ;     /,`--.' | /   /   \  
+.'___,/    ,',---.'|  : ',---.'   |        :   : '/ / |   :  :,`--.'`|  ' :,---.'   |.'___,/    ,' |   :  :|   :     : 
+|    :     | |   | : _' ||   |   .'        |   '   ,  :   |  '|   :  :  | ||   |   .'|    :     |  :   |  '.   |  ;. / 
+;    |.';  ; :   : |.'  |:   :  |-,        '   |  /   |   :  |:   |   \ | ::   :  |-,;    |.';  ;  |   :  |.   ; /--`  
+`----'  |  | |   ' '  ; ::   |  ;/|        |   ;  ;   '   '  ;|   : '  '; |:   |  ;/|`----'  |  |  '   '  ;;   | ;     
+    '   :  ; '   |  .'. ||   :   .'        :   '   \  |   |  |'   ' ;.    ;|   :   .'    '   :  ;  |   |  ||   : |     
+    |   |  ' |   | :  | '|   |  |-,        |   |    ' '   :  ;|   | | \   ||   |  |-,    |   |  '  '   :  ;.   | '___  
+    '   :  | '   : |  : ;'   :  ;/|        '   : |.  \|   |  ''   : |  ; .''   :  ;/|    '   :  |  |   |  ''   ; : .'| 
+    ;   |.'  |   | '  ,/ |   |    \        |   | '_\.''   :  ||   | '`--'  |   |    \    ;   |.'   '   :  |'   | '/  : 
+    '---'    ;   : ;--'  |   :   .'        '   : |    ;   |.' '   : |      |   :   .'    '---'     ;   |.' |   :    /  
+             |   ,/      |   | ,'          ;   |,'    '---'   ;   |.'      |   | ,'                '---'    \   \ .'   
+             '---'       `----'            '---'              '---'        `----'                            `---`     
+                                                                                                                       
+<-->
   </head>
   <body ng-app="kinetixApp" ng-controller="AppController">
     <!--[if lte IE 8]>
@@ -24,32 +49,85 @@
     <!-- Add your site or application content here -->
 
     <div class="menu-wrap">
-      <button class="close-button" id="close-button">Close Menu</button>
+      <!-- <button class="close-button" id="close-button"></button> -->
+      <div class="menu-close-btn" id="close-button">
+        <div class="glyphicon glyphicon-menu-left"></div>
+        <div class="glyphicon glyphicon-menu-right"></div>
+      </div>  
+
       <nav class="menu">
         <div class="menu-list link-effect" id="menu">
           <a class="menu-item" ui-sref-active-eq="active" href ui-sref="app"><span data-hover="Home">Home</span></a><br/>
           <a class="menu-item" ui-sref-active="active" href ui-sref="app.showreel"><span data-hover="Reel">Reel</span></a><br/>
-          <a class="menu-item" ui-sref-active="active" href ui-sref="app.projects"><span data-hover="Portfolio">Portfolio</span></a><br/>
+          <a class="menu-item" ui-sref-active="active" href ui-sref="app.projects"><span data-hover="Our Work">Our Work</span></a><br/>
           <a class="menu-item" ui-sref-active="active" href ui-sref="app.about"><span data-hover="About">About</span></a><br/>
           <a class="menu-item" ui-sref-active="active" href ui-sref="app.culture"><span data-hover="Culture">Culture</span></a><br/>
           <a class="menu-item" ui-sref-active="active" href ui-sref="app.contact"><span data-hover="Contact">Contact</span></a>
         </div>
       </nav>
 
+      <div class="row nav-social">
+            <div class="row social2" style="margin-bottom: 30px; padding-right: 20px;">
+              <div class="col-xs-2">
+              </div>
+              <div class="col-xs-2">
+                <a href="https://www.facebook.com/thekineticstudio/?fref=ts" target="_blank">
+                  <div class="circle-icon">
+                    <i class="fa fa-facebook"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xs-2">
+                <a href="https://www.behance.net/thekinetic" target="_blank">
+                  <div class="circle-icon">
+                    <i class="fa fa-behance"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xs-2">
+                <a href="https://www.instagram.com/thekineticstudio/" target="_blank">
+                  <div class="circle-icon">
+                    <i class="fa fa-instagram"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xs-2">
+                <a href="https://twitter.com/the_kinetic?lang=en" target="_blank">
+                  <div class="circle-icon">
+                    <i class="fa fa-twitter"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xs-2">
+                <a href="https://vimeo.com/thekinetic" target="_blank">
+                  <div class="circle-icon">
+                    <i class="fa fa-vimeo"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+      </div>
+    </div>
+
+    <div class="menu-aux-area">
     </div>
 
     <div class="menu-circle">
-        <button class="menu-button" id="open-button">Open Menu</button>
+        <button class="menu-button" id="open-button"></button>
     </div>
 
           <div ng-switch="isLoading">
 
                   <!-- BEGIN: Loading View. -->
-                  <p ng-switch-when="true">
-
-                      Your images are being loaded... {{ percentLoaded }}%
-
-                  </p>
+                  <div class="preloader" ng-switch-when="true">
+                      <div class="topbar">
+                          <div class="topbar-loader" style="width: {{ percentLoaded }}%;">
+                          </div>
+                      </div>
+                      <div class="loader">
+                        <img src="images/loader_001.gif">
+                      </div>
+                  </div>
                   <!-- END: Loading View. -->
 
                   <!-- BEGIN: Results View. -->
@@ -90,19 +168,17 @@
 
 
 
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-29766254-1', 'auto');
+    </script>
 
-   
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-    <!--  <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script> -->
+
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -115,15 +191,16 @@
     <script src="bower_components/ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/underscore/underscore.js"></script>
     <script src="bower_components/greensock/src/uncompressed/TweenMax.js"></script>
-    <script src="bower_components/waypoints/lib/noframework.waypoints.js"></script>
     <script src="bower_components/owl.carousel/dist/owl.carousel.js"></script>
     <script src="bower_components/angulargrid/angulargrid.js"></script>
     <script src="bower_components/Snap.svg/dist/snap.svg-min.js"></script>
     <script src="bower_components/ng-videosharing-embed/build/ng-videosharing-embed.min.js"></script>
+    <script src="bower_components/lightbox2/dist/js/lightbox.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/ScrollToPlugin.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
 
 
 
@@ -134,12 +211,30 @@
         <script src="scripts/controllers/projects-controller.js"></script>
         <script src="scripts/controllers/project-details-controller.js"></script>
         <script src="scripts/services/project-service.js"></script>
+        <script src="scripts/services/culture-service.js"></script>
+        <script src="scripts/services/analytics-service.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/contact-controller.js"></script>
+        <script src="scripts/controllers/culture.js"></script>
         <script src="scripts/directives/bg-img-directive.js"></script>
         <script src="scripts/directives/owl-carousel-directive.js"></script>
         <script src="scripts/controllers/preload-images-controller.js"></script>
         <script src="scripts/services/preload-image-factory.js"></script>
         <!-- endbuild -->
+
+        <script type="text/javascript">
+          $(function(){
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+      var ww = ( $(window).width() < window.screen.width ) ? $(window).width() : window.screen.width; //get proper width
+      var mw = 380; // min width of site
+      var ratio =  ww / mw; //calculate ratio
+      if( ww < mw){ //smaller than minimum size
+       $('#Viewport').attr('content', 'initial-scale=' + ratio + ', maximum-scale=' + ratio + ', minimum-scale=' + ratio + ', user-scalable=yes, width=' + ww);
+      }else{ //regular size
+       $('#Viewport').attr('content', 'initial-scale=1.0, maximum-scale=2, minimum-scale=1.0, user-scalable=yes, width=' + ww);
+      }
+    }
+    });
+        </script>
 </body>
 </html>

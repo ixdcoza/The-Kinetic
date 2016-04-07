@@ -12,8 +12,13 @@
 	angular.module('kinetixApp')
 	  .controller('ContactCtrl', function () {
 
+
 	  	/* jshint ignore:start */
-	  	google.maps.event.addDomListener(window, 'load', init);
+	  	// google.maps.event.addDomListener(window, 'load', init);
+
+
+          	// // Create and Animate Play Button
+
 
 	  	function init() {
 	  	    // Basic options for a simple Google Map
@@ -29,7 +34,7 @@
 
 	  	        // How you would like to style the map. 
 	  	        // This is where you would paste any style found on Snazzy Maps.
-	  	         styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#c1cacd"},{"visibility":"on"}]}]
+	  	         styles: [{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","elementType":"all","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","elementType":"all","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","elementType":"all","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]}]
 	  	    };
 
 	  	    // Get the HTML DOM element that will contain your map 
@@ -47,6 +52,7 @@
 	  	        icon: '../../images/marker.png'
 	  	    });
 	  	}
+	  	init();
 	  	/* jshint ignore:end */
 
 
