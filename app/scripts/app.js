@@ -1,4 +1,4 @@
-(function () { 
+(function () {
 
 'use strict';
 
@@ -18,8 +18,11 @@ angular
     'angularGrid',
     'videosharing-embed'
   ])
-  .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+  .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', '$httpProvider', function($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
+      $httpProvider.defaults.cache = true;
+
       $urlRouterProvider.otherwise('/');
+      $locationProvider.html5Mode(true);
       $stateProvider
         // home
         .state('app', {
@@ -128,4 +131,4 @@ angular
 
 
 
-})(); 
+})();

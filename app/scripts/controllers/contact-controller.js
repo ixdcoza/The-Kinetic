@@ -30,7 +30,7 @@
 	  	          disableDoubleClickZoom: true,
 
 	  	        // The latitude and longitude to center the map (always required)
-	  	        center: new google.maps.LatLng(-26.094384, 28.038003), 
+	  	        center: new google.maps.LatLng(-26.149971, 28.034721), 
 
 	  	        // How you would like to style the map. 
 	  	        // This is where you would paste any style found on Snazzy Maps.
@@ -46,7 +46,7 @@
 
 	  	    // Let's also add a marker while we're at it
 	  	    var marker = new google.maps.Marker({
-	  	        position: new google.maps.LatLng(-26.094384, 28.038003),
+	  	        position: new google.maps.LatLng(-26.149971, 28.034721),
 	  	        map: map,
 	  	        title: 'The Kinetic',
 	  	        icon: '../../images/marker.png'

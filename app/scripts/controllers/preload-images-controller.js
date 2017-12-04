@@ -102,6 +102,9 @@
                     ( "../../images/projects/39/thumb.jpg" ),
                     ( "../../images/projects/40/thumb.jpg" ),
                     ( "../../images/projects/41/thumb.jpg" ),
+                    ( "../../images/projects/42/thumb.jpg" ),
+                    ( "../../images/projects/43/thumb.jpg" ),
+                    ( "../../images/projects/44/thumb.jpg" ),
                 ];
                 // Preload the images; then, update display when returned.
                 preloader.preloadImages( $scope.imageLocations ).then(

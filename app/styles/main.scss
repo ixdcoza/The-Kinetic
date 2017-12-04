@@ -1478,6 +1478,20 @@ embed-video {
     }
   }
 
+  .mobile-project-images {
+      visibility: hidden;
+      display: none;
+      height: auto;
+      li {
+        list-style:none;
+        list-style-type: none;
+        position: relative;
+        img {
+          width: 100%;
+        }
+      }
+  }
+
   .peeps {
      display:none;
     visibility: hidden;
